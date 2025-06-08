@@ -1,0 +1,69 @@
+/* Maresía Styleguide */
+
+
+/* CSS Role Tokens*/
+:root {
+
+    /* Colors */
+    --basic-color-primary: #000;
+    --basic-color-secondary: #FFFF; 
+   
+    --text-color-primary: #1E212D;
+    --text-color-secondary: #93BBE3;
+    --text-color-tertiary: #F9F1EA;
+    --text-color-error: #A41919; 
+
+    --background-color-primary: #1E212D;
+    --background-color-secondary: #93BBE3;
+    --background-color-tertiary: #F9F1EA;
+    --background-color-quaternary: #2F4568;
+
+    --interaction-color-primary: #D9A648; 
+    --interaction-color-primary-hover: #F7CE83;
+
+
+    /* Typography */
+    --typography-family-primary: 'Nunito', sans-serif;
+    --typography-family-secondary: "Crimson Text", serif;
+    --typography-bold-weight: 700;
+    --typography-semibold-weight: 600;
+    --typography-regular-weight: 400; 
+
+    /* Font sizes */
+    --font-size-x-huge: 2.25rem;     /* 36px */
+    --font-size-huge: 2rem;          /* 32px */
+    --font-size-xxx-large: 1.625rem; /* 26px */
+    --font-size-xx-large: 1.5rem;    /* 24px */
+    --font-size-x-large: 1.375rem;   /* 22px */
+    --font-size-large: 1.125rem;     /* 18px */
+    --font-size-medium: 1rem;        /* 16px */
+    --font-size-small: 0.875rem;     /* 14px */
+    --font-size-x-small: 0.75rem;    /* 12px */
+
+    /* Line heights (font-size + 4px) */
+    --line-height-size-x-huge:    2.5rem;     /* 36px + 4px = 40px */
+    --line-height-size-huge:      2.25rem;    /* 32px + 4px = 36px */
+    --line-height-size-xxx-large: 1.875rem;   /* 26px + 4px = 30px */
+    --line-height-size-xx-large:  1.75rem;    /* 24px + 4px = 28px */
+    --line-height-size-x-large:   1.625rem;   /* 22px + 4px = 26px */
+    --line-height-size-large:     1.375rem;   /* 18px + 4px = 22px */
+    --line-height-size-medium:    1.25rem;    /* 16px + 4px = 20px */
+    --line-height-size-small:     1.125rem;   /* 14px + 4px = 18px */
+    --line-height-size-x-small:   1rem;       /* 12px + 4px = 16px */
+
+    /* Spacings */
+    --spacing-xs: 0.5rem;  /* 8px */
+    --spacing-s: 1rem;     /* 16px */
+    --spacing-m: 1.5rem;   /* 24px */
+    --spacing-l: 2rem;     /* 32px */
+    --spacing-xl: 3rem;    /* 48px */
+
+    /* Breakpoints  */
+    --breakpoint-xs: 320px;    /* small phones */
+    --breakpoint-sm: 480px;    /* larger phones */
+    --breakpoint-md: 768px;    /* tablets */
+    --breakpoint-lg: 1024px;   /* small laptops */
+    --breakpoint-xl: 1280px;   /* standard desktops */
+    --breakpoint-xxl: 1440px;  /* Max width for Maresía's main layout */
+
+}

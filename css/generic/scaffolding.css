@@ -1,0 +1,29 @@
+/* Scaffolding */
+/* Base styles for HTML and Body */
+
+html {
+  box-sizing: border-box; /* Use border-box model for consistent sizing across elements */
+  font-size: 16px; /* Base font size for rem units */
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;  /* Inherit border-box from html for all elements and pseudo-elements */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--typography-family-primary);
+  font-weight: var(--typography-regular-weight);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+  background-color: var(--basic-color-secondary);
+  color: var(--text-color-primary);
+  -webkit-font-smoothing: antialiased;  /* Improves text rendering on WebKit browsers (Chrome, Safari, etc.) */
+  -moz-osx-font-smoothing: grayscale;  /* Improves text rendering on Firefox for macOS */
+}
+
+h1 {
+  font-family: var(--typography-family-secondary);
+}

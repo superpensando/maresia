@@ -1,0 +1,22 @@
+/*-------------------
+// ITCSS Architecture 
+// (Harry Roberts: https://www.youtube.com/watch?v=1OKZOV-iLj4) / https://desarrolloweb.com/articulos/itcss-que-es-bases.html
+//  CSS Layer:
+//      -Settings: Variables and configuration (CUI framework includes, breakpoints...)
+//      -Generic: General css adjusts (Resets, normalize, scaffolding or layout ...
+//      -Objetcs: Layout, mediaqueries
+//      -Components.
+//      -Utilities: Overrides, Shame and Helpers code  with ability to override anything.
+//       IT's the only place where the !important is allowed!
+//          _shame.scss ( Quick-fixes, horrible-fixes that need to be refactored in the future)
+//          _trumps.scss (Generic Helpers)
+//
+//------------------------*/
+
+/* Settings */
+@import url("./settings/styleguide.css");
+
+/* Generic */
+@import url("./generic/normalize.css");
+@import url("./generic/typography.css");
+@import url("./generic/scaffolding.css");
