@@ -2,13 +2,18 @@
 /* Base styles for HTML and Body */
 
 html {
-  box-sizing: border-box; /* Use border-box model for consistent sizing across elements */
-  font-size: 16px; /* Base font size for rem units */
+  box-sizing: border-box;
+  /* Use border-box model for consistent sizing across elements */
+  font-size: 16px;
+  /* Base font size for rem units */
   scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;  /* Inherit border-box from html for all elements and pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  /* Inherit border-box from html for all elements and pseudo-elements */
 }
 
 body {
@@ -20,6 +25,30 @@ body {
   line-height: var(--line-height-medium);
   background-color: var(--basic-color-secondary);
   color: var(--text-color-primary);
-  -webkit-font-smoothing: antialiased;  /* Improves text rendering on WebKit browsers (Chrome, Safari, etc.) */
-  -moz-osx-font-smoothing: grayscale;  /* Improves text rendering on Firefox for macOS */
+  -webkit-font-smoothing: antialiased;
+  /* Improves text rendering on WebKit browsers (Chrome, Safari, etc.) */
+  -moz-osx-font-smoothing: grayscale;
+  /* Improves text rendering on Firefox for macOS */
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--interaction-color-primary);
 }
