@@ -1,0 +1,33 @@
+/* Highlight Quote */
+
+
+.highlight__quote {
+    padding: var(--spacing-large);
+    margin: 0;
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+    color: var(--text-color-tertiary);
+    background-color: var(--background-color-quaternary);
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Responsive - Media Query*/
+
+@media screen and (min-width: 768px) {
+
+    /*  --breakpoint-tablet-portrait: 768px */
+    .highlight__quote {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: var(--spacing-large) var(--spacing-xxxxx-large);
+
+    }
+
+    .header {
+        margin-top: 64px;
+    }
+
+}
