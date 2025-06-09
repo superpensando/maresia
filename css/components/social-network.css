@@ -7,7 +7,9 @@
     padding: 0;
 }
 .social-netwok__link{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     min-width: 44px;
     min-height: 44px;
