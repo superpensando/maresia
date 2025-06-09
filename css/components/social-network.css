@@ -1,0 +1,21 @@
+/* Social Network bar*/
+
+.social-netwok {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+.social-netwok__link{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.social-netwok__icon svg path {
+    stroke: var(--text-color-primary);
+}
+
+.social-netwok__icon:hover svg path,
+.social-netwok__icon:focus svg path,
+.social-netwok__icon:active svg path {
+    stroke: var(--interaction-color-primary);
+}
