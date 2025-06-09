@@ -1,19 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Maresía </title>
-    <base href="/" />  <!-- Define base path for relative URLs -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />  <!-- Responsive viewport -->
-    <link rel="icon" type="image/svg+xml"  href="favicon-maresia.ico" />    <!-- Favicon -->
-    <link rel="stylesheet" href="./css/styles.css" />    <!-- General Styles-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Maresía </title>
+  <base href="/" /> <!-- Define base path for relative URLs -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive viewport -->
+  <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" /> <!-- Favicon -->
+  <link rel="stylesheet" href="./css/styles.css" /> <!-- General Styles-->
   </style>
-  </head>
-  <body>
+</head>
 
-       <p>Prueba tipografía 1</p>
-       <h1>Prueba tipografía 2</h1>
+<body>
 
-  </body>
+
+  <!--Header -->
+  <header id="header" class="header">
+  </header>
+  <!--Carousel -->
+  <div class="carousel__wrapper">
+    <div class="carousel" id="carousel">
+
+      <div class="carousel__track">
+        <section class="carousel__item">
+          <picture>
+            <source srcset="./assets/images/home/home-carousel1-1x.webp" type="image/webp" />
+            <source srcset="./assets/images/home/home-carousel1-1x.jpg" type="image/jpeg" />
+            <img src="./assets/images/home/home-carousel1-1x.jpg" alt="Maresía edición clásica mirando al mar"
+              width="1444" height="620" class="carousel__image" loading="lazy" decoding="async" />
+          </picture>
+        </section>
+        <section class="carousel__item">
+          <picture>
+            <source srcset="./assets/images/home/home-carousel2-1x.webp" type="image/webp" />
+            <source srcset="./assets/images/home/home-carousel2-1x.jpg" type="image/jpeg" />
+            <img src="./assets/images/home/home-carousel1-1x.jpg"
+              alt="Frascos de perfume Maresía con ingredientes mediterráneos" width="1444" height="620"
+              class="carousel__image" loading="lazy" decoding="async" />
+          </picture>
+
+        </section>
+      </div>
+      <div class="carousel__actions">
+        <button class="button button-primary"><span>Descubre</span><span class="only-desktop">nuestra nueva
+            colección</span></button>
+        <div class="carousel-paginator" id="carouselPaginator">
+          <span class="carousel-paginator__dot isActive" data-index="0"></span>
+          <span class="carousel-paginator__dot" data-index="1"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <main class="main">
+
+    <!--Highlight-->
+    <blockquote class="highlight__quote">
+      “Allí donde el mar susurra, nace el aroma que toca el alma”
+    </blockquote>
+    <!--Highlight sections-->
+    <div class="highlight-sections">
+      <!--Collections-->
+      <section class="highlight-section">
+        <h2 class="highlight-section__title">Colecciones</h2>
+        <a href="/colecciones" class="highlight-section__link" aria-label="Ver todas las colecciones de Maresía">
+          <figure class="highlight-section__item">
+            <img src="./assets/images/home/home-colection.jpg" alt="Maresía colecciones"
+              class="highlight-section__image" loading="lazy" decoding="async" />
+          </figure>
+        </a>
+      </section>
+      </section>
+      <!--highlight-section-->
+      <section class="highlight-section">
+        <h2 class="highlight-section__title">Novedades</h2>
+        <a href="#" class="highlight-section__link" aria-label="View all Maresía new arrivals">
+          <figure class="highlight-section__item">
+            <img src="./assets/images/home/home-news.jpg" alt="Maresía novedades" class="highlight-section__image"
+              loading="lazy" decoding="async" />
+          </figure>
+        </a>
+      </section>
+    </div>
+
+
+  </main>
+  <!--Footer -->
+  <footer id="footer" class="footer">
+  </footer>
+
+  <script src="js/include-html.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/responsive.js"></script>
+  <script>
+    includeFragment("header.html", "#header", injectIcons, updateResponsiveVisibility);
+    includeFragment("footer.html", "#footer", injectIcons, updateFooterNavState, updateResponsiveVisibility);
+  </script>
+
+</body>
+
 </html>
-
