@@ -48,8 +48,8 @@
     text-decoration: none;
     font-family: var(--typography-family-secondary);
     font-weight: var(--typography-semibold-weight);
-    font-size: var(--font-size-x-large);
-    line-height: var(--line-height-x-large);
+    font-size: var(--font-size-xx-large);
+    line-height: var(--line-height-xx-large);
     color: var(--text-color-primary);
     text-transform: uppercase;
 }
@@ -110,7 +110,7 @@
 
 @media screen and (min-width: 1024px) and ( max-width: 1200px ) {  
     .header__nav-link {
-        font-size: var(--font-size-large);
-        line-height: var(--line-height-large);
+        font-size: var(--font-size-x-medium);
+        line-height: var(--line-height-x-medium);
     }
 }
