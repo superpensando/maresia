@@ -6,7 +6,7 @@
   height: 40px;
   padding: var(--spacing-xx-small) var(--spacing-small);
   background-color: transparent;
-  color: var(--basic-color-secondary);
+  color: var(--text-color-tertiary);
   font-size: var(--font-size-small);
   line-height: var(--font-size-small);
   appearance: none;
@@ -22,7 +22,7 @@
 }
 
 .form-field::placeholder {
-  color: var(--basic-color-secondary);
+  color: var(--text-color-tertiary);
   font-size: var(--font-size-small);
   line-height: var(--font-size-small);
   font-style: italic;
@@ -38,7 +38,7 @@
 .form-field__select {
   position: relative;
   padding: var(--spacing-xx-small) var(--spacing-xxx-large) var(--spacing-xx-small) var(--spacing-small);
-  border-bottom: 1px solid var(--basic-color-secondary);
+  border-bottom: 1px solid var(--background-color-tertiary);
   cursor: pointer;
 }
 
@@ -47,7 +47,7 @@
   top: 12px;
   right: 10px;
   pointer-events: none;
-  color: var(--basic-color-secondary);
+  color: var(--text-color-tertiary);
 }
 
 .form-field__select-icon svg {
@@ -62,7 +62,7 @@
 
   /*  --breakpoint-tablet-portrait: 768px */
   .form-field {
-    border: 1px solid var(--basic-color-secondary);
+    border: 1px solid var(--background-color-tertiary);
   }
 
 
@@ -78,7 +78,7 @@
   }
 
   .form-field::placeholder {
-    color: var(--basic-color-secondary);
+    color: var(--text-color-tertiary);
     font-size: var(--font-size-x-medium);
     line-height: var(--line-height-x-medium);
     font-style: italic;
