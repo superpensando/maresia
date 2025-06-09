@@ -35,33 +35,36 @@
     --font-size-xxx-large: 1.625rem; /* 26px */
     --font-size-xx-large: 1.5rem;    /* 24px */
     --font-size-x-large: 1.375rem;   /* 22px */
-    --font-size-large: 1.125rem;     /* 18px */
+    --font-size-large: 1.25rem;      /* 20px */
+    --font-size-x-medium: 1.125rem;  /* 18px */
     --font-size-medium: 1rem;        /* 16px */
     --font-size-small: 0.875rem;     /* 14px */
     --font-size-x-small: 0.75rem;    /* 12px */
 
     /* Line heights (font-size + 4px) */
-    --line-height-size-x-huge:    2.5rem;     /* 36px + 4px = 40px */
-    --line-height-size-huge:      2.25rem;    /* 32px + 4px = 36px */
-    --line-height-size-xxx-large: 1.875rem;   /* 26px + 4px = 30px */
-    --line-height-size-xx-large:  1.75rem;    /* 24px + 4px = 28px */
-    --line-height-size-x-large:   1.625rem;   /* 22px + 4px = 26px */
-    --line-height-size-large:     1.375rem;   /* 18px + 4px = 22px */
-    --line-height-size-medium:    1.25rem;    /* 16px + 4px = 20px */
-    --line-height-size-small:     1.125rem;   /* 14px + 4px = 18px */
-    --line-height-size-x-small:   1rem;       /* 12px + 4px = 16px */
+    --line-height-x-huge:    2.5rem;     /* 36px + 4px = 40px */
+    --line-height-huge:      2.25rem;    /* 32px + 4px = 36px */
+    --line-height-xxx-large: 1.875rem;   /* 26px + 4px = 30px */
+    --line-height-xx-large:  1.75rem;    /* 24px + 4px = 28px */
+    --line-height-x-large:   1.625rem;   /* 22px + 4px = 26px */
+    --line-height-large:     1.5rem;    /* 20x + 4px = 24px */
+    --line-height-x-medium:  1.375rem;   /* 18px + 4px = 22px */
+    --line-height-medium:    1.25rem;    /* 16px + 4px = 20px */
+    --line-height-small:     1.125rem;   /* 14px + 4px = 18px */
+    --line-height-x-small:   1rem;       /* 12px + 4px = 16px */
 
     /* Spacings */
-    --spacing-xxx-small: 0.3125rem;   /* 5px  oks*/
-    --spacing-xx-small:  0.5rem;     /* 8px oks*/
-    --spacing-x-small: 0.625rem;   /* 10px oks */
-    --spacing-small:   1rem;        /* 16px */
-    --spacing-medium: 1.25rem;      /* 20px oks */
-    --spacing-large:    1.5rem;     /* 24px */
-    --spacing-x-large: 1.75rem;     /* 28px */
-    --spacing-xx-large:  2rem;       /* 40px */
-    --spacing-xxx-large: 3rem;       /* 50px */
-    --spacing-xxxx-large: 3.75rem;  /* 60px oks */
+    --spacing-xxx-small: 0.125rem;       /* 2px */
+    --spacing-xx-small:  0.3125rem;      /* 5px */
+    --spacing-x-small:   0.5rem;         /* 8px */
+    --spacing-small:     0.625rem;       /* 10px */
+    --spacing-medium:    1rem;           /* 16px */
+    --spacing-large:     1.25rem;        /* 20px */
+    --spacing-x-large:   1.5rem;         /* 24px */
+    --spacing-xx-large:  1.875rem;       /* 30px */
+    --spacing-xxx-large: 2.5rem;         /* 40px */
+    --spacing-xxxx-large: 3.125rem;      /* 50px */
+    --spacing-xxxxx-large: 3.75rem;      /* 60px */
 
     /* Breakpoints  */
     --breakpoint-phones-small: 320px;    /* small phones */
