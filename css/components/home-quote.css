@@ -10,7 +10,6 @@
     color: var(--text-color-tertiary);
     background-color: var(--background-color-quaternary);
     width: 100%;
-    max-width: var(--breakpoint-desktop);
     text-align: center;
 }
 
@@ -23,6 +22,7 @@
     .highlight__quote {
         position: absolute;
         top: 0;
+        left:0;
         padding: var(--spacing-large) var(--spacing-xxxxx-large);
     }
 

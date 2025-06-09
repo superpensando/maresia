@@ -1,4 +1,9 @@
 /* Carousel */
+
+.carousel__wrapper {
+  width: 100%;
+  background-color: var(--background-color-tertiary);
+}
 .carousel {
   position: relative;
   width: 100%;
@@ -76,5 +81,8 @@
   /*  --breakpoint-tablet-portrait: 768px */
   .carousel {
     height: 620px;
+  }
+  .carousel__actions {
+    padding: var(--spacing-small) var(--spacing-xxxxx-large);
   }
 }

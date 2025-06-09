@@ -26,12 +26,17 @@
 
 /*Components*/
 @import url("./components/icon.css");
+@import url("./components/button.css");
 @import url("./components/form-fields.css");
 @import url("./components/accesibility.css");
 @import url("./components/social-network.css");
 @import url("./components/header.css");
 @import url("./components/footer.css");
 @import url("./components/carousel.css");
+
+/*Components Pages*/
+@import url("./components/home-quote.css ");
+@import url("./components/home-sections.css ");
 
 /*Utilities*/
 @import url("./utilities/trumps.css");
