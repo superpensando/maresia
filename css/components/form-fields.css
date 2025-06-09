@@ -73,14 +73,14 @@
 @media screen and (min-width: 1024px) {
   .form-field {
     width: 300px;
-    font-size: var(--font-size-large);
-    line-height: var(--line-height-large);
+    font-size: var(--font-size-x-medium);
+    line-height: var(--line-height-x-medium);
   }
 
   .form-field::placeholder {
     color: var(--basic-color-secondary);
-    font-size: var(--font-size-large);
-    line-height: var(--line-height-large);
+    font-size: var(--font-size-x-medium);
+    line-height: var(--line-height-x-medium);
     font-style: italic;
   }
 

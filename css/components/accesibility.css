@@ -49,8 +49,8 @@
         width: 25px;
     }
     .accesibility__link {
-        font-size: var( --font-size-large);
-        line-height: var(--line-height-large);
+        font-size: var( --font-size-x-medium);
+        line-height: var(--line-height-x-medium);
         font-weight:  var(--typography-semibold-weight);
     }
 }
