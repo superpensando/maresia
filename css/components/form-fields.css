@@ -1,0 +1,87 @@
+/* Form fields */
+
+/* General */
+.form-field {
+  width: 200px;
+  height: 40px;
+  padding: var(--spacing-xx-small) var(--spacing-small);
+  background-color: transparent;
+  color: var(--basic-color-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--font-size-small);
+  appearance: none;
+  /* Hide native arrow */
+  -webkit-appearance: none;
+  /* Safari */
+  -moz-appearance: none;
+  /* Firefox */
+  background-image: none;
+  /* Por si acaso */
+  outline: none;
+  border: none;
+}
+
+.form-field::placeholder {
+  color: var(--basic-color-secondary);
+  font-size: var(--font-size-small);
+  line-height: var(--font-size-small);
+  font-style: italic;
+}
+
+
+/* Dropdown - Select */
+.form-field__select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.form-field__select {
+  position: relative;
+  padding: var(--spacing-xx-small) var(--spacing-xxx-large) var(--spacing-xx-small) var(--spacing-small);
+  border-bottom: 1px solid var(--basic-color-secondary);
+  cursor: pointer;
+}
+
+.form-field__select-icon {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  pointer-events: none;
+  color: var(--basic-color-secondary);
+}
+
+.form-field__select-icon svg {
+  width: 16px;
+}
+
+
+
+/* Responsive - Media Query*/
+
+@media screen and (min-width: 768px) {
+
+  /*  --breakpoint-tablet-portrait: 768px */
+  .form-field {
+    border: 1px solid var(--basic-color-secondary);
+  }
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  .form-field {
+    width: 300px;
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+  }
+
+  .form-field::placeholder {
+    color: var(--basic-color-secondary);
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+    font-style: italic;
+  }
+
+}
