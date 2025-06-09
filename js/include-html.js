@@ -1,4 +1,4 @@
-function includeFragment(fileName, selector, callback) {
+function includeFragment(url, selector, ...callbacks) {
   const target = document.querySelector(selector);
 
   if (!target) {
@@ -6,18 +6,17 @@ function includeFragment(fileName, selector, callback) {
     return;
   }
 
-  fetch(fileName)
+  fetch(url)
     .then(response => {
-      if (!response.ok) throw new Error(`Error loading ${fileName}`);
+      if (!response.ok) throw new Error(`Error loading ${url}`);
       return response.text();
     })
     .then(html => {
       target.innerHTML = html;
 
-      // Ejecutar callback después de inyectar el fragmento
-      if (typeof callback === "function") {
-        callback();
-      }
+      callbacks.forEach(cb => {
+        if (typeof cb === "function") cb();
+      });
     })
     .catch(error => {
       console.error(error);
