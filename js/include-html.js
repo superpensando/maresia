@@ -1,4 +1,4 @@
-function includeFragment(fileName, selector) {
+function includeFragment(fileName, selector, callback) {
   const target = document.querySelector(selector);
 
   if (!target) {
@@ -13,9 +13,14 @@ function includeFragment(fileName, selector) {
     })
     .then(html => {
       target.innerHTML = html;
+
+      // Ejecutar callback después de inyectar el fragmento
+      if (typeof callback === "function") {
+        callback();
+      }
     })
     .catch(error => {
       console.error(error);
-      target.innerHTML = "<!-- include failed -->";
+      target.innerHTML = "<!-- fragment include failed -->";
     });
 }

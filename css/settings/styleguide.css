@@ -52,18 +52,24 @@
     --line-height-size-x-small:   1rem;       /* 12px + 4px = 16px */
 
     /* Spacings */
-    --spacing-xs: 0.5rem;  /* 8px */
-    --spacing-s: 1rem;     /* 16px */
-    --spacing-m: 1.5rem;   /* 24px */
-    --spacing-l: 2rem;     /* 32px */
-    --spacing-xl: 3rem;    /* 48px */
+    --spacing-xxx-small: 0.3125rem;   /* 5px  oks*/
+    --spacing-xx-small:  0.5rem;     /* 8px oks*/
+    --spacing-x-small: 0.625rem;   /* 10px oks */
+    --spacing-small:   1rem;        /* 16px */
+    --spacing-medium: 1.25rem;      /* 20px oks */
+    --spacing-large:    1.5rem;     /* 24px */
+    --spacing-x-large: 1.75rem;     /* 28px */
+    --spacing-xx-large:  2rem;       /* 40px */
+    --spacing-xxx-large: 3rem;       /* 50px */
+    --spacing-xxxx-large: 3.75rem;  /* 60px oks */
 
     /* Breakpoints  */
-    --breakpoint-xs: 320px;    /* small phones */
-    --breakpoint-sm: 480px;    /* larger phones */
-    --breakpoint-md: 768px;    /* tablets */
-    --breakpoint-lg: 1024px;   /* small laptops */
-    --breakpoint-xl: 1280px;   /* standard desktops */
-    --breakpoint-xxl: 1440px;  /* Max width for Maresía's main layout */
+    --breakpoint-phones-small: 320px;    /* small phones */
+    --breakpoint-phones-large: 480px;    /* larger phones */
+    --breakpoint-tablet-portrait: 768px;    /* tablet portrait*/
+    --breakpoint-tablet-landscape: 1024px; /* tablet landscape*/
+    --breakpoint-desktop-small: 1280px;   /*  desktop small */
+    --breakpoint-desktop: 1440px;  /* Max width for Maresía's main layout */
+
 
 }

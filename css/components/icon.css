@@ -1,0 +1,18 @@
+/* Icons */
+
+*[class*=icon-] {
+    display:inline-block;
+    width:25px;
+    height:auto;
+}
+
+
+/* Responsive - Media Query*/
+
+@media screen and (min-width: 768px) { /*  --breakpoint-tablet-portrait: 768px */
+   *[class*=icon-] {
+    display:inline-block;
+    width:30px;
+    height:auto;
+    }
+}

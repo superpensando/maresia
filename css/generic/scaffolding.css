@@ -23,7 +23,3 @@ body {
   -webkit-font-smoothing: antialiased;  /* Improves text rendering on WebKit browsers (Chrome, Safari, etc.) */
   -moz-osx-font-smoothing: grayscale;  /* Improves text rendering on Firefox for macOS */
 }
-
-h1 {
-  font-family: var(--typography-family-secondary);
-}
