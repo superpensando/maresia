@@ -90,7 +90,6 @@
 }
 .header__button .icon-menu svg path.icon-override { 
     fill: var(--text-color-primary);
-    border:1px solid red; 
 }
 
 .header__button:hover  .header__icon:not(.icon-menu)  svg path,
