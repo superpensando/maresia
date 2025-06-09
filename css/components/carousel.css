@@ -5,6 +5,7 @@
   max-width: var(--breakpoint-desktop);
   overflow: hidden;
   height: 375px;
+  margin:0 auto;
 }
 
 .carousel__track {

@@ -2,13 +2,15 @@
 
 
 .highlight__quote {
+    display:block;
+    margin: 0 auto;
     padding: var(--spacing-large);
-    margin: 0;
     font-size: var(--font-size-large);
     line-height: var(--line-height-large);
     color: var(--text-color-tertiary);
     background-color: var(--background-color-quaternary);
     width: 100%;
+    max-width: var(--breakpoint-desktop);
     text-align: center;
 }
 
@@ -21,9 +23,7 @@
     .highlight__quote {
         position: absolute;
         top: 0;
-        left: 0;
         padding: var(--spacing-large) var(--spacing-xxxxx-large);
-
     }
 
     .header {
