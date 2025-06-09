@@ -36,9 +36,7 @@
 
 
 /* Header Navigation*/
-.header__nav {
-    display:none; 
-}
+
 .header__nav-list {
     display: flex;
     gap: var(--spacing-xx-large);
@@ -105,17 +103,8 @@
 /* Responsive - Media Query*/
 
 @media screen and (min-width: 768px) {  /*  --breakpoint-tablet-portrait: 768px */
-    .header {
+    .header__content {
         padding: var(--spacing-xx-small) var(--spacing-xxxx-large);
-    }
-}
-
-@media screen and (min-width: 1024px) {  /*  --breakpoint-tablet-landscape: 1024px */
-    .header__nav {
-        display:block; 
-    }
-    .header__button:has(.icon-menu){
-        display:none;
     }
 }
 
