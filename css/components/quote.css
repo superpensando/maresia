@@ -1,7 +1,7 @@
 /* Highlight Quote */
 
 
-.home__quote {
+.quote {
     display:block;
     margin: 0 auto;
     padding: var(--spacing-large);
@@ -16,10 +16,10 @@
 
 /* Responsive - Media Query*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
    
-    .home__quote {
+    .quote {
         position: absolute;
         top: 0;
         left:0;

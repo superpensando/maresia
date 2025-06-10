@@ -32,10 +32,10 @@
 @import url("./components/social-network.css");
 @import url("./components/header.css");
 @import url("./components/footer.css");
+@import url("./components/carousel.css");
+@import url("./components/quote.css ");
 
 /*Components Pages*/
-@import url("./components/home-carousel.css");
-@import url("./components/home-quote.css ");
 @import url("./components/home-sections.css ");
 @import url("./components/home-testimonials.css ");
 

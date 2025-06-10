@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Maresía </title>
+  <base href="/" /> <!-- Define base path for relative URLs -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive viewport -->
+  <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" /> <!-- Favicon -->
+  <link rel="stylesheet" href="./css/styles.css" /> <!-- General Styles-->
+  </style>
+</head>
+
+<body>
+
+
+  <!--Header -->
+  <header id="header" class="header">
+  </header>
+
+  <!--Carousel Main -->
+  <div class="carousel__wrapper">
+    <div class="carousel" id="carouselAboutMaresia">
+
+      <div class="carousel__track">
+        <section class="carousel__item">
+          <picture>
+            <source srcset="./assets/images/about-maresia/about-maresia-carousel1-1x.webp" type="image/webp" />
+            <source srcset="./assets/images/about-maresia/about-maresia-carousel1-1x.jpg" type="image/jpeg" />
+            <img src="./assets/images/about-maresia/about-maresia-carousel1-1x.jpg" alt="Maresía procesos artesanales"
+              width="1444" height="620" class="carousel__image" loading="lazy" decoding="async" />
+          </picture>
+        </section>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+
+    <!-- quote-->
+    <blockquote class="quote only-desktop">
+      “Allí donde el mar susurra, nace el aroma que toca el alma”
+    </blockquote>
+
+    <!-- Main bottom section-->
+    <div id="main-bottom" class="main-bottom"></footer>
+
+  </main>
+  <!--Footer -->
+  <footer id="footer" class="footer">
+  </footer>
+
+  <script src="js/include-html.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/responsive.js"></script>
+  <script>
+    includeFragment("header.html", "#header", injectIcons, updateResponsiveVisibility);
+    includeFragment("footer.html", "#footer", injectIcons, updateFooterNavState, updateResponsiveVisibility);
+    includeFragment("main-bottom.html", "#main-bottom", injectIcons);
+  </script>
+
+</body>
+
+</html>

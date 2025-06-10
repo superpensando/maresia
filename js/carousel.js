@@ -7,8 +7,14 @@ function initCarousel(carouselId) {
   const track = carousel.querySelector('.carousel__track');
   const items = carousel.querySelectorAll('.carousel__item');
   const dots = carousel.querySelectorAll('.carousel-paginator__dot');
+  const paginator = carousel.querySelector('.carousel-paginator');
+
+  if (paginator && items.length <= 1) {
+    paginator.style.display = 'none';
+  }
 
   let currentIndex = 0;
+  
 
   function updateCarousel(index) {
     const offset = -index * 100;
@@ -32,5 +38,5 @@ function initCarousel(carouselId) {
 
  document.addEventListener("DOMContentLoaded", () => {
     initCarousel("#carouselHome");
-    initCarousel("#carouselAboutMaresia");
+    initCarousel("#carouselPress");
   });
