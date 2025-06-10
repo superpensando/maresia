@@ -103,7 +103,7 @@
 
 @media screen and (min-width: 768px) { 
     .header__content {
-        padding: var(--spacing-xx-small) var(--spacing-xxxx-large);
+        padding: var(--spacing-medium) var(--spacing-xxxx-large);
     }
 }
 
