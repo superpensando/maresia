@@ -39,4 +39,6 @@ function initCarousel(carouselId) {
  document.addEventListener("DOMContentLoaded", () => {
     initCarousel("#carouselHome");
     initCarousel("#carouselPress");
+    initCarousel("#carouselAboutMaresia");
+    initCarousel("#carouselProducts");
   });
