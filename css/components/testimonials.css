@@ -7,7 +7,7 @@
   scroll-snap-type: x mandatory;
 }
 
-.home-testimonials__content {
+.home-testimonials__wrapper {
   display: flex;
   flex-wrap: nowrap; 
   gap: var( --spacing-large);
@@ -53,7 +53,7 @@
         font-size:var(--font-size-x-medium);
         line-height: var(--line-height-x-medium);
     }
-    .home-testimonials__content {
+    .home-testimonials__wrapper {
         justify-content: space-between;
     } 
 
