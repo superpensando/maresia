@@ -211,14 +211,8 @@
       </div>
     </section>
 
-    <!-- Newsletter section -->
-    <section class="newsletter" aria-labelledby="newsletter-title">
-      <h2 id="newsletter-title" class="newsletter__title visually-hidden">Suscripción a la newsletter</h2>
-      <a href="#newsletter-form" class="newsletter__cta" aria-label="Ir al formulario de suscripción">
-        Suscríbete a nuestra Newsletter
-      </a>
-    </section>
-
+    <!-- Main bottom section-->
+    <div id="main-bottom" class="main-bottom"></footer>
 
   </main>
   <!--Footer -->
@@ -233,6 +227,7 @@
   <script>
     includeFragment("header.html", "#header", injectIcons, updateResponsiveVisibility);
     includeFragment("footer.html", "#footer", injectIcons, updateFooterNavState, updateResponsiveVisibility);
+    includeFragment("main-bottom.html", "#main-bottom", injectIcons);
   </script>
 
 </body>

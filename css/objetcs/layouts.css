@@ -10,6 +10,24 @@
      max-width: var(--breakpoint-desktop);
 }
 
+.main-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var( --spacing-large);
+}
+
+.main-bottom-newsletter {
+    display: flex;
+    justify-content: center;
+    padding:var(--spacing-small);
+    background-color: var(--background-color-tertiary);
+    width:100%;
+
+}
+
+
 /* Responsive - Media Query*/
 
 @media screen and (min-width: 768px) { 

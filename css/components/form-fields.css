@@ -28,6 +28,16 @@
   font-style: italic;
 }
 
+/* General secondary*/
+.form-field--secondary {
+  color:var(--text-color-primary);
+  background-color: var(--basic-color-secondary);
+  width: 300px;
+}
+.form-field--secondary::placeholder {
+  color: var(--text-color-primary);
+}
+
 
 /* Dropdown - Select */
 .form-field__select-wrapper {
