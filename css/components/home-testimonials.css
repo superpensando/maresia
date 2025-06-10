@@ -30,7 +30,7 @@
     line-height:var(--line-height-xx-large);
     font-weight: var(--typography-bold-weight);
 }
-.home-testimonial__text {
+.home-testimonial__desc {
     font-size:var( --font-size-small);
     line-height:var(--line-height-small);
     padding-bottom:var(--spacing-xxx-large);
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .home-testimonial__text {
+    .home-testimonial__desc {
         font-size:var(--font-size-x-medium);
         line-height: var(--line-height-x-medium);
     }
