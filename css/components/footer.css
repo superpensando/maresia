@@ -151,7 +151,7 @@
 /* Responsive - Media Query*/
 
 @media screen and (min-width: 768px) {
-    /*  --breakpoint-tablet-portrait: 768px */
+   
 
     .footer__content {
         gap: var(--spacing-medium);

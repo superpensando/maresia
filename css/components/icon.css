@@ -12,7 +12,7 @@
 
 /* Responsive - Media Query*/
 
-@media screen and (min-width: 768px) { /*  --breakpoint-tablet-portrait: 768px */
+@media screen and (min-width: 768px) {
    *[class*=icon-] svg {
     width:30px;
     }
