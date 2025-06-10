@@ -34,9 +34,10 @@
 @import url("./components/footer.css");
 @import url("./components/carousel.css");
 @import url("./components/quote.css ");
+@import url("./components/sections.css ");
+@import url("./components/breadcrumb.css");
 
 /*Components Pages*/
-@import url("./components/home-sections.css ");
 @import url("./components/home-testimonials.css ");
 
 /*Utilities*/
