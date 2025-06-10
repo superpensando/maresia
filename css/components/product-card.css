@@ -1,0 +1,102 @@
+/* Product Card */
+
+.product-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-large);
+}
+
+.product-card {
+  width: calc(50% - 10px);
+}
+
+.product-card__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xx-small);
+}
+
+.product-card__title {
+  font-family: var(--typography-family-secondary);
+  font-size: var(--font-size-x-large);
+  line-height: var(--line-height-x-large);
+  font-weight: var(--typography-bold-weight);
+  text-align: center;
+  margin-top: var(--spacing-xx-small);
+}
+
+.product-card__note {
+  font-size:var(--font-size-x-medium);
+  line-height:var(--line-height-x-medium);
+  text-align: center;
+}
+
+.product-card__type {
+  display: inline-block;
+  margin-top:2px;
+  font-size: var(--font-size-small);
+  line-height:var(--line-height-small);
+  text-align: center;
+}
+
+.product-card__price {
+  font-size: var(--font-size-small);
+  line-height:var(--line-height-small);
+  text-align: center;
+}
+
+.product-card__image {
+  width: 100%;
+}
+
+.product-card__button {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: unset;
+  z-index:10;
+}
+
+
+/* Responsive - Media Query*/
+
+@media screen and (min-width: 1024px) {
+  .product-list {
+    gap: var(--spacing-xxxxx-large);
+  }
+
+  .product-card {
+    width: calc(25% - 45px);
+  }
+
+  .product-card__item {
+    gap: var(--spacing-large);
+  }
+
+  .product-card__title {
+    font-size: var(--font-size-xx-large);
+    line-height: var(--line-height-xx-large);
+  }
+
+  .product-card__note {
+    font-size: var(--font-size-large);
+    font-weight: var(--typography-semibold-weight);
+  }
+
+  .product-card__type {
+     font-size: var(--font-size-large);
+     font-weight: var(--typography-regular-weight);
+     margin-top: var(--spacing-small);
+  }
+
+  .product-card__price {
+     font-size: var(--font-size-large);
+  }
+}
