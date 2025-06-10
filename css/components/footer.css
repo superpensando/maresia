@@ -39,7 +39,7 @@
     gap: var(--spacing-xxx-small);
 }
 
-.footer__nav-group {
+.footer__nav {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -97,17 +97,17 @@
 
 
 /*The open attribute is specific to the <details> element.*/
-.footer__nav-group[open] .footer__nav-icon.icon-plus,
-.footer__nav-group .footer__nav-icon.icon-minus {
+.footer__nav[open] .footer__nav-icon.icon-plus,
+.footer__nav .footer__nav-icon.icon-minus {
     display: none;
 }
 
-.footer__nav-group .footer__nav-icon.icon-plus,
-.footer__nav-group[open] .footer__nav-icon.icon-minus {
+.footer__nav .footer__nav-icon.icon-plus,
+.footer__nav[open] .footer__nav-icon.icon-minus {
     display: block;
 }
 
-.footer__nav-group[open] .footer__nav-list {
+.footer__nav[open] .footer__nav-list {
     max-height: 200px;
     transition: max-height 0.4s ease;
 }
@@ -169,7 +169,7 @@
         gap: var(--spacing-xxxxx-large);
     }
 
-    .footer__nav-group {
+    .footer__nav {
         display: flex;
         flex-direction: column;
         overflow: visible;
