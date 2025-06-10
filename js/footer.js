@@ -4,7 +4,7 @@ window.addEventListener("resize", () => updateFooterNavState(768));
 function updateFooterNavState(breakpoint = 768) {
   const isDesktop = window.innerWidth >= breakpoint;
 
-  document.querySelectorAll('.footer__nav-group').forEach((el) => {
+  document.querySelectorAll('.details__wrapper').forEach((el) => {
     if (isDesktop) {
       el.open = true;
     } else {
