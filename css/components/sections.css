@@ -1,0 +1,115 @@
+/* Highlight sections */
+
+/* General sections*/
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.section {
+    display:flex;
+    flex-direction: column ;
+}
+
+.section__title {
+    font-size:var(--font-size-xx-large);
+    line-height:var(--line-height-xx-large);
+    font-family:var(--typography-family-secondary);
+    font-weight: var(--typography-bold-weight);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section__subtitle {
+    font-size: var(--font-size-x-medium);
+    line-height: var(--line-height-x-medium);
+    font-weight: var( --typography-semibold-weight);
+}
+
+.section__title span {
+    text-transform: capitalize;
+}
+
+
+/* Home sections*/
+.sections--home {
+    gap: var(--spacing-large);
+}
+.section--home {
+    gap:var(--spacing-small);
+}
+
+.section--home__figure {
+    width: 100%;
+}
+
+.section--home__link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section--home__image {
+   width: 100%;
+}
+
+/* About Maresia sections */
+.section--about-maresia {
+    padding: var(--spacing-large);
+    gap: var(--spacing-large);
+    background-color:var(--background-color-tertiary);
+}
+
+.section--about-maresia__content {
+    display: flex;
+    flex-direction: column;
+    gap:var(--spacing-large);
+}
+
+.section--about-maresia__desc {
+    font-size:var(--font-size-small);
+    line-height:var(--line-height-small);
+}
+
+.section--about-maresia__image {
+   width: 100%;
+}
+
+
+/* Responsive - Media Query*/
+
+@media screen and (min-width: 768px) { 
+    .sections {
+       flex-direction: row;
+       justify-content: space-between;
+    }
+
+    .section__title {
+        font-size:var(--font-size-huge);
+        line-height:var(--line-height-huge);
+    }   
+    .section--about-maresia {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: var(--spacing-xxxxx-large);
+        padding:var(--spacing-xxxxx-large);
+        
+    }
+    .section--about-maresia:has(.section--about-maresia__figure) .section--about-maresia__content {
+        max-width: 65%;
+    }
+    .section--about-maresia-eco .section--about-maresia__figure {
+        order:1; 
+    }
+    .section--about-maresia-eco .section--about-maresia__content {
+
+        order:0; 
+    }
+    .section--about-maresia .section__title {
+        text-align: left;
+    }
+
+}

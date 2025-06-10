@@ -1,4 +1,4 @@
-/* Carousel */
+/* Carousel Paginator dots */
 
 function initCarousel(carouselId) {
   const carousel = document.querySelector(carouselId);

@@ -42,8 +42,6 @@
   object-position: center;
 }
 
-
-/* Carousel Actions*/
 .carousel__actions {
   position: absolute;
   display: flex;
@@ -75,6 +73,7 @@
 
 .carousel-paginator__dot.isActive {
   background-color: var(--interaction-color-primary);
+  cursor:default;
 }
 
 
@@ -136,26 +135,89 @@
 }
 
 
+/* Carousel Thumb  */
+
+.carousel-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:var(--spacing-large);
+}
+
+.carousel-thumb__thumbnails {
+  display: flex;
+  flex-direction: row;
+  gap:var(--spacing-large);
+  order:1; 
+}
+
+.carousel-thumb__thumb {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.carousel-thumb__main {
+  width:100%;
+  order:0; 
+}
+
+.carousel-thumb__thumb:hover,
+.carousel-thumb__thumb.isActive,
+.carousel-thumb__thumb:active{
+  border: 3px solid var(--interaction-color-primary);
+}
+
+.carousel-thumb__main .carousel-thumb__image {
+  width: 100%;
+  height: auto;
+   border: 3px solid var(--interaction-color-primary);
+}
+
+
 /* Responsive - Media Query*/
 
 @media screen and (min-width: 768px) {
 
- 
-  .carousel-home {
-    height: 620px;
-  }
+  /* Carousel Main */
   .carousel {
     height: 550px;
+  }
+  .carousel-home {
+    height: 620px;
   }
   .carousel__actions {
     padding: var(--spacing-small) var(--spacing-xxxxx-large);
   }
 
+  /* Carousel Thumb  */
+  .carousel-thumb {
+    flex-direction: row;
+    align-items: flex-start;
+    gap:var(--spacing-xxxxx-large);
+  }
+
+  .carousel-thumb__main {
+    order:1; 
+  }
+  .carousel-thumb__thumbnails {
+    flex-direction: column;
+    order:0;
+
+  
+  }
+  .carousel-thumb__thumb {
+    width: 150px;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
+
+  /* Carousel Press */
   .carousel-press .carousel__track {
-       justify-content: center;
+    justify-content: center;
   }
 
   .carousel-press .carousel__track {
@@ -169,4 +231,14 @@
     padding:0; 
   }
 
+
+
+}
+
+@media screen and (min-width: 1200px) {
+   /* Carousel Thumb  */
+
+    .carousel-thumb__thumb {
+      width: 220px;
+    }
 }

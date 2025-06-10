@@ -7,7 +7,11 @@
     padding:var(--font-size-large);
     gap:var(--font-size-large);
     margin:0 auto;
-     max-width: var(--breakpoint-desktop);
+    max-width: var(--breakpoint-desktop);
+}
+
+.main-internal {
+    gap:var( --font-size-xxx-large);
 }
 
 .main-bottom {
