@@ -6,7 +6,7 @@
     border:none; 
     cursor:pointer;
     padding: var(--spacing-medium) var(--spacing-x-large);
-    height: 48px; 
+    min-height: 48px; 
     font-size: var(--font-size-x-medium);
     line-height: var(--line-height-x-medium);
     font-weight: var(--typography-semibold-weight);

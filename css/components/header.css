@@ -67,17 +67,12 @@
 }
 
 .header__button {
-    border: none;
-    background-color: transparent;
     min-width: 44px;
     min-height: 44px;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     line-height: unset;
-    cursor: pointer;
 }
 
 .header__button  .header__icon:not(.icon-menu) svg path {
