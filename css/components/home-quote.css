@@ -1,7 +1,7 @@
 /* Highlight Quote */
 
 
-.highlight__quote {
+.home__quote {
     display:block;
     margin: 0 auto;
     padding: var(--spacing-large);
@@ -19,7 +19,7 @@
 @media screen and (min-width: 768px) {
 
     /*  --breakpoint-tablet-portrait: 768px */
-    .highlight__quote {
+    .home__quote {
         position: absolute;
         top: 0;
         left:0;

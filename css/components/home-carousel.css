@@ -1,5 +1,6 @@
 /* Carousel */
 
+/* Carousel Main*/
 .carousel__wrapper {
   width: 100%;
   background-color: var(--background-color-tertiary);
@@ -74,6 +75,64 @@
 }
 
 
+/* Carousel About Maresía*/
+
+.carousel-aboutMaresia__wrapper {
+  display:flex;
+  flex-direction: column;
+  gap:var(--spacing-large);
+  width: 100%;
+  background-color: var(--background-color-tertiary);
+  padding: var(--spacing-large) 0; 
+}
+
+.carousel-aboutMaresia {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap:var(--spacing-large);
+  width:100%;
+  overflow: hidden;
+}
+
+
+.carousel-aboutMaresia__picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   padding: var(--spacing-large);
+   cursor:pointer;
+}
+
+.carousel-aboutMaresia__image{
+   width: 200px;
+   height:auto;
+}
+
+.carousel-aboutMaresia__actions {
+   position: relative; 
+}
+
+.carousel-aboutMaresia__link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color-primary);
+  width:auto;
+}
+
+.carousel-aboutMaresia__caption {
+  position: absolute;
+  display:block;
+  bottom: var(--spacing-xx-large);
+  left: calc(50% - 50px) ;
+  font-weight: var(--typography-bold-weight);
+  font-size: var(--font-size-x-medium);
+  line-height:var(--line-height-x-medium);
+}
+
+
 /* Responsive - Media Query*/
 
 @media screen and (min-width: 768px) {
@@ -85,4 +144,23 @@
   .carousel__actions {
     padding: var(--spacing-small) var(--spacing-xxxxx-large);
   }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-aboutMaresia .carousel__track {
+       justify-content: center;
+  }
+
+  .carousel-aboutMaresia .carousel__track {
+    gap:var(--spacing-xxxxx-large);
+  }
+
+  .carousel-aboutMaresia .carousel__item {
+    flex: unset;
+  }
+  .carousel-aboutMaresia__picture {
+    padding:0; 
+  }
+
 }
