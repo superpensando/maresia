@@ -26,8 +26,8 @@
 
 .home-testimonial__title {
     font-family:var(--typography-family-secondary);
-    font-size:var(--font-size-xx-large);
-    line-height:var(--line-height-xx-large);
+    font-size:var(--font-size-x-large);
+    line-height:var(--line-height-x-large);
     font-weight: var(--typography-bold-weight);
 }
 .home-testimonial__desc {
