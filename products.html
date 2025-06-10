@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Maresía </title>
+  <base href="/" /> <!-- Define base path for relative URLs -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive viewport -->
+  <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" /> <!-- Favicon -->
+  <link rel="stylesheet" href="./css/styles.css" /> <!-- General Styles-->
+  </style>
+</head>
+
+<body>
+
+  <!--Header -->
+  <header id="header" class="header">
+  </header>
+
+  <!--Carousel Main -->
+  <div class="carousel__wrapper">
+    <div class="carousel" id="carouselProducts">
+      <div class="carousel__track">
+        <section class="carousel__item">
+          <picture>
+            <source srcset="./assets/images/product/product-maresia-carousel1-1x.webp" type="image/webp" />
+            <source srcset="./assets/images/product/product-maresia-carousel1-1x.jpg" type="image/jpeg" />
+            <img src="./assets/images/product/product-maresia-carousel1-1x.jpg" alt="Maresía procesos artesanales"
+              width="1444" height="620" class="carousel__image" loading="lazy" decoding="async" />
+          </picture>
+        </section>
+      </div>
+    </div>
+  </div>
+  <main class="main main-internal">
+
+    <!-- quote-->
+    <blockquote class="quote only-desktop">
+      “Allí donde el mar susurra, nace el aroma que toca el alma”
+    </blockquote>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="/" class="breadcrumb__link">Home</a>
+        </li>
+        <li class="breadcrumb__separator" aria-hidden="true">/</li>
+        <li class="breadcrumb__item" aria-current="page">Productos</li>
+      </ul>
+    </nav>
+
+    <!-- Collections -->
+    <nav class="sections sections--product ">
+      <!-- Classic Edition -->
+      <div class="sections--product__wrapper">
+        <section class="section section--product">
+          <h2 class="section__title">Colección <br /> Clásica</h2>
+          <a href="products-detail.html" class="section__link" aria-label="Ver colección clássica de Maresía">
+            <img src="./assets/images/product/product-classic-edition.jpg" alt="Maresía Edición Clásica"
+              class="section--product__image" loading="lazy" decoding="async" />
+          </a>
+        </section>
+        <!-- Marina Edition -->
+        <section class="section  section--product">
+          <h2 class="section__title"> Colección <br /> Marina </h2>
+          <a href="products-detail.html" class="section__link" aria-label="Ver colección Marina de Maresía">
+
+            <img src="./assets/images/product/product-marina-edition.jpg" alt="Maresía Edición Marina"
+              class="section--product__image" loading="lazy" decoding="async" />
+          </a>
+        </section>
+      </div>
+      <div class="sections--product__wrapper">
+        <!-- Limited Edition Calm-->
+        <section class="section section--product">
+          <h2 class="section__title">E. Limitada <br /> Calma</h2>
+          <a href="products-detail.html" class="section__link" aria-label="Ver colección clássica de Maresía">
+            <img src="./assets/images/product/product-limited-edition-calm.jpg" alt="Maresía Edición Limitada Calma"
+              class="section--product__image" loading="lazy" decoding="async" />
+          </a>
+        </section>
+        <!-- Limited Edition Arcilla-->
+        <section class="section  section--product">
+          <h2 class="section__title"> E. Limitada <br /> Arcilla </h2>
+          <a href="products-detail.html" class="section__link" aria-label="Ver colección Marina de Maresía">
+
+            <img src="./assets/images/product/product-limited-edition-arcilla.jpg" alt="Maresía Edición Limitada Arc"
+              class="section--product__image" loading="lazy" decoding="async" />
+          </a>
+        </section>
+      </div>
+    </nav>
+
+    <!-- Filters -->
+    <div class="filters">
+      <div class="filter__wrapper">
+        <div class="filter-controls">
+          <button class="filter__button" aria-expanded="false" aria-controls="filter-options">
+            <span>Filtrar resultados</span></Filtrar> <i data-icon="arrow-down" class="filter__icon icon-arrow-down"></i>
+          </button>
+        </div>
+        <div class="filter-sort">
+          <button class="filter__button" aria-expanded="false" aria-controls="filter-sort">
+            <span>Ordenar por</span></Filtrar> <i data-icon="arrow-down" class="filter__icon icon-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+      <div class="filter__wrapper">
+        <span class="filter-results">Results: X</span>
+        <div class="filter-view">
+          <button aria-label="Vista en cuadrícula" class="filter__button">
+            <i data-icon="list" class="filter__icon icon-list"></i>
+          </button>
+          <button aria-label="Vista en lista" class="filter__button">
+            <i data-icon="grid" class="filter__icon icon-grid"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Productos -->
+    <ul class="product-list">
+      <li class="product-card">
+        <article class="product-card__item">
+          <a href="products-detail.html" class="product-card__link" aria-label="Ver Perfume Colección Clásica Nº1">
+            <img src="./assets/images/product/product-classic-only-1.jpg" alt="Perfume Colección Clásica Nº1"
+              class="product-card__image" />
+            <h3 class="product-card__title">CLÁSICA Nº1</h3>
+          </a>
+          <p class="product-card__note">Cítrica<br><span class="product-card__type">Perfume</span></p>
+          <p class="product-card__price">Desde € 0.00</p>
+          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="product-card__button" aria-label="Añadir a favoritos">
+            <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
+          </button>
+        </article>
+      </li>
+      <li class="product-card">
+        <article class="product-card__item">
+          <a href="products-detail.html" class="product-card__link" aria-label="Ver Perfume Edición Limitada Calma Nº4">
+            <img src="./assets/images/product/product-limited-calm-only-4.jpg" alt="Perfume Edición Limitada Calma Nº4"
+              class="product-card__image" />
+            <h3 class="product-card__title">CALMA Nº4</h3>
+          </a>
+          <p class="product-card__note">Calma<br><span class="product-card__type">Agua de Perfume</span></p>
+          <p class="product-card__price">Desde € 0.00</p>
+          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="product-card__button" aria-label="Añadir a favoritos">
+            <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
+          </button>
+        </article>
+      </li>
+      <li class="product-card">
+        <article class="product-card__item">
+          <a href="products-detail.html" class="product-card__link" aria-label="Ver Perfume Colección Marina Nº2">
+            <img src="./assets/images/product/product-marina-only-2.jpg" alt="Perfume Colección Marina Nº2"
+              class="product-card__image" />
+            <h3 class="product-card__title">MARINA Nº2</h3>
+          </a>
+          <p class="product-card__note">Blanca<br><span class="product-card__type">Agua de Perfume</span></p>
+          <p class="product-card__price">Desde € 0.00</p>
+          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="product-card__button" aria-label="Añadir a favoritos">
+            <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
+          </button>
+        </article>
+      </li>
+      <li class="product-card">
+        <article class="product-card__item">
+          <a href="products-detail.html" class="product-card__link" aria-label="Ver Perfume Colección Clásica Nº5">
+            <img src="./assets/images/product/product-classic-only-5.jpg" alt="Perfume Colección Clásica Nº5"
+              class="product-card__image" />
+            <h3 class="product-card__title">CLÁSICA Nº5</h3>
+          </a>
+          <p class="product-card__note">Floral<br><span class="product-card__type">Perfume</span></p>
+          <p class="product-card__price">Desde € 0.00</p>
+          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="product-card__button" aria-label="Añadir a favoritos">
+            <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
+          </button>
+        </article>
+      </li>
+      <li class="product-card">
+        <article class="product-card__item">
+          <a href="products-detail.html" class="product-card__link" aria-label="Ver Perfume Colección Marina Nº5">
+            <img src="./assets/images/product/product-marina-only-5.jpg" alt="Perfume Colección Marina Nº5"
+              class="product-card__image" />
+            <h3 class="product-card__title">MARINA Nº5</h3>
+          </a>
+          <p class="product-card__note">Salina<br><span class="product-card__type">Agua de Perfume</span></p>
+          <p class="product-card__price">Desde € 0.00</p>
+          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="product-card__button" aria-label="Añadir a favoritos">
+            <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
+          </button>
+        </article>
+      </li>
+      <li class="product-card">
+        <article class="product-card__item">
+          <a href="products-detail.html" class="product-card__link" aria-label="Ver Perfume Colección Recargable">
+            <img src="./assets/images/product/product-rechargable-only.jpg" alt="Perfume Colección Recargable"
+              class="product-card__image" />
+            <h3 class="product-card__title">RECARGABLE Nº1</h3>
+          </a>
+          <p class="product-card__note">-<br><span class="product-card__type">-</span></p>
+          <p class="product-card__price">Desde € 0.00</p>
+          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="product-card__button" aria-label="Añadir a favoritos">
+            <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
+          </button>
+        </article>
+      </li>
+    </ul>
+
+
+
+
+
+    <!-- Main bottom section-->
+    <div id="main-bottom" class="main-bottom">
+  </main>
+  <!--Footer -->
+  <footer id="footer" class="footer">
+  </footer>
+
+  <script src="js/include-html.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/carousel-thubnails.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/responsive.js"></script>
+  <script>
+    includeFragment("header.html", "#header", injectIcons, updateResponsiveVisibility);
+    includeFragment("footer.html", "#footer", injectIcons, updateFooterNavState, updateResponsiveVisibility);
+    includeFragment("main-bottom.html", "#main-bottom", injectIcons);
+  </script>
+
+</body>
+
+</html>

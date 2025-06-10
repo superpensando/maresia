@@ -1,6 +1,6 @@
 /* Highlight sections */
 
-/* General sections*/
+/* Section Shared */
 
 .sections {
     display: flex;
@@ -32,8 +32,14 @@
     text-transform: capitalize;
 }
 
+.section__link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-/* Home sections*/
+
+/*  Section Home */
 .sections--home {
     gap: var(--spacing-large);
 }
@@ -41,28 +47,19 @@
     gap:var(--spacing-small);
 }
 
-.section--home__figure {
-    width: 100%;
-}
-
-.section--home__link {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .section--home__image {
    width: 100%;
 }
 
-/* About Maresia sections */
+/* Section About Maresia */
 .section--about-maresia {
     padding: var(--spacing-large);
     gap: var(--spacing-large);
     background-color:var(--background-color-tertiary);
 }
 
-.section--about-maresia__content {
+.section--about-maresia__wrapper {
     display: flex;
     flex-direction: column;
     gap:var(--spacing-large);
@@ -78,7 +75,37 @@
 }
 
 
+/* Section Products */
+.sections--product {
+    padding:var(--spacing-large);
+    gap:var(--spacing-large); 
+    background-color: var(--background-color-tertiary);
+}
+.sections--product__wrapper {
+    display: flex;
+    flex-direction: row;  
+    gap:var(--spacing-large);   
+}
+.section--product {
+    width:50%;
+    align-items: center;
+    gap: var(--spacing-small); 
+}
+
+.section--product__image {
+    width: 100%;
+}
+
+
 /* Responsive - Media Query*/
+
+@media screen and  (max-width: 400px) { 
+    .section__title {
+        font-size:var(--font-size-medium);
+        line-height:var(--line-height-medium);
+
+    }
+}
 
 @media screen and (min-width: 768px) { 
     .sections {
@@ -87,9 +114,11 @@
     }
 
     .section__title {
-        font-size:var(--font-size-huge);
-        line-height:var(--line-height-huge);
-    }   
+        font-size:var(--font-size-xx-large);
+        line-height:var(--line-height-xx-large);
+    } 
+
+    /* Section About Maresia */
     .section--about-maresia {
         flex-direction: row;
         justify-content: space-between;
@@ -98,13 +127,13 @@
         padding:var(--spacing-xxxxx-large);
         
     }
-    .section--about-maresia:has(.section--about-maresia__figure) .section--about-maresia__content {
+    .section--about-maresia:has(.section--about-maresia__figure) .section--about-maresia__wrapper {
         max-width: 65%;
     }
     .section--about-maresia-eco .section--about-maresia__figure {
         order:1; 
     }
-    .section--about-maresia-eco .section--about-maresia__content {
+    .section--about-maresia-eco .section--about-maresia__wrapper {
 
         order:0; 
     }
@@ -112,4 +141,19 @@
         text-align: left;
     }
 
+
+    /* Section Products */
+    .sections--product {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) { 
+     .section__title {
+        font-size:var(--font-size-huge);
+        line-height:var(--line-height-huge);
+    } 
 }
