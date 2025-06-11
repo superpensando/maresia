@@ -147,12 +147,11 @@
 .carousel-thumb__thumbnails {
   display: flex;
   flex-direction: row;
-  gap:var(--spacing-large);
-  order:1; 
+  gap:var(--spacing-small);
 }
 
-.carousel-thumb__thumb {
-  width: 100px;
+.carousel-thumb__img {
+  width: 50px;
   height: auto;
   cursor: pointer;
   border: 3px solid transparent;
@@ -160,19 +159,29 @@
 
 .carousel-thumb__main {
   width:100%;
-  order:0; 
 }
 
-.carousel-thumb__thumb:hover,
-.carousel-thumb__thumb.isActive,
-.carousel-thumb__thumb:active{
+.carousel-thumb__img:hover,
+.carousel-thumb__img.isActive,
+.carousel-thumb__img:active{
   border: 3px solid var(--interaction-color-primary);
 }
 
 .carousel-thumb__main .carousel-thumb__image {
   width: 100%;
   height: auto;
-   border: 3px solid var(--interaction-color-primary);
+  border: 3px solid var(--interaction-color-primary);
+}
+
+
+
+/* Carousel Thumb Product */
+.carousel-thumb--product {
+  align-items: flex-start;
+}
+
+.carousel-thumb--product .carousel-thumb__img{
+  width:50px;
 }
 
 
@@ -192,23 +201,25 @@
   }
 
   /* Carousel Thumb  */
-  .carousel-thumb {
+
+  .carousel-thumb--about-maresia .carousel-thumb__img {
+    width: 150px;
+  }
+
+  .carousel-thumb--about-maresia  {
     flex-direction: row;
     align-items: flex-start;
     gap:var(--spacing-xxxxx-large);
+   
+  }
+  .carousel-thumb--about-maresia .carousel-thumb__thumbnails {
+     flex-direction: column;
+     order:0; 
+     gap: var(--spacing-large);
   }
 
-  .carousel-thumb__main {
+  .carousel-thumb--about-maresia .carousel-thumb__main{
     order:1; 
-  }
-  .carousel-thumb__thumbnails {
-    flex-direction: column;
-    order:0;
-
-  
-  }
-  .carousel-thumb__thumb {
-    width: 150px;
   }
 
 }
@@ -238,7 +249,7 @@
 @media screen and (min-width: 1200px) {
    /* Carousel Thumb  */
 
-    .carousel-thumb__thumb {
+     .carousel-thumb--about-maresia .carousel-thumb__img {
       width: 220px;
     }
 }
