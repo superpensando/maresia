@@ -8,7 +8,7 @@
     gap: var( --spacing-large);  
 }
 
-.product-detail-section {
+.product-detail__title-section {
     font-family: var(--typography-family-secondary);
      text-align: center;
      font-size: var(--font-size-large);
@@ -66,7 +66,7 @@
         width:calc( 50% - 30px);
     }
 
-    .product-detail-section,
+    .product-detail__title-section,
     .product-detail__title {
         text-align:left;
     }

@@ -10,7 +10,7 @@
     max-width: var(--breakpoint-desktop);
 }
 
-.main-internal {
+.main--internal {
     gap:var( --font-size-xxx-large);
 }
 

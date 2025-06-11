@@ -1,6 +1,6 @@
 /* Carousel Thumbnails */
 
-const thumbs = document.querySelectorAll('.carousel-thumb__img');
+const thumbs = document.querySelectorAll('.carousel-thumb__thumbanils-image');
 const mainImage = document.getElementById('mainImage');
 
 thumbs.forEach(thumb => {

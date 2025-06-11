@@ -13,7 +13,7 @@
   margin:0 auto;
 }
 
-.carousel-home {
+.carousel--home {
   height: 375px;
 }
 
@@ -150,7 +150,7 @@
   gap:var(--spacing-small);
 }
 
-.carousel-thumb__img {
+.carousel-thumb__thumbanils-image {
   width: 50px;
   height: auto;
   cursor: pointer;
@@ -161,9 +161,9 @@
   width:100%;
 }
 
-.carousel-thumb__img:hover,
-.carousel-thumb__img.isActive,
-.carousel-thumb__img:active{
+.carousel-thumb__thumbanils-image:hover,
+.carousel-thumb__thumbanils-image.isActive,
+.carousel-thumb__thumbanils-image:active{
   border: 3px solid var(--interaction-color-primary);
 }
 
@@ -180,7 +180,7 @@
   align-items: flex-start;
 }
 
-.carousel-thumb--product .carousel-thumb__img{
+.carousel-thumb--product .carousel-thumb__thumbanils-image{
   width:50px;
 }
 
@@ -193,7 +193,7 @@
   .carousel {
     height: 550px;
   }
-  .carousel-home {
+  .carousel--home {
     height: 620px;
   }
   .carousel__actions {
@@ -202,7 +202,7 @@
 
   /* Carousel Thumb  */
 
-  .carousel-thumb--about-maresia .carousel-thumb__img {
+  .carousel-thumb--about-maresia .carousel-thumb__thumbanils-image {
     width: 150px;
   }
 
@@ -249,7 +249,7 @@
 @media screen and (min-width: 1200px) {
    /* Carousel Thumb  */
 
-     .carousel-thumb--about-maresia .carousel-thumb__img {
+     .carousel-thumb--about-maresia .carousel-thumb__thumbanils-image {
       width: 220px;
     }
 }

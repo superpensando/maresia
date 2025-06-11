@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>Maresía </title>
-  <base href="/" /> <!-- Define base path for relative URLs -->
+  <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive viewport -->
   <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" /> <!-- Favicon -->
   <link rel="stylesheet" href="./css/styles.css" /> <!-- General Styles-->
-  </style>
 </head>
 
 <body>
@@ -32,9 +31,11 @@
       </div>
     </div>
   </div>
-  <main class="main main-internal">
 
-    <!-- quote-->
+  <!--Content Main Internal-->
+  <main class="main main--internal">
+
+    <!-- Quote-->
     <blockquote class="quote only-desktop">
       “Allí donde el mar susurra, nace el aroma que toca el alma”
     </blockquote>
@@ -50,9 +51,9 @@
       </ul>
     </nav>
 
-    
+    <!-- Product Detail -->
     <article class="product-detail">
-      <h2 class="product-detail-section">Colección Clássica</h2>
+      <h2 class="product-detail__title-section">Colección Clássica</h2>
       <div class="product-detail__wrapper">
             <div class="carousel-thumb carousel-thumb--product">
               <figure class="carousel-thumb__main">
@@ -61,23 +62,21 @@
               </figure>
               <div class="carousel-thumb__thumbnails">
                 <img src="./assets/images/product-detail/product-detail-classic1.jpg" alt="Maresía Filosofía"
-                  class="carousel-thumb__img isActive"
+                  class="carousel-thumb__thumbanils-image isActive"
                   data-full="./assets/images/product-detail/product-detail-classic1.jpg" />
                 <img src="./assets/images/product-detail/product-detail-classic2.jpg" alt="Maresía Proceso artesanal"
-                  class="carousel-thumb__img" data-full="./assets/images/product-detail/product-detail-classic2.jpg" />
+                  class="carousel-thumb__thumbanils-image" data-full="./assets/images/product-detail/product-detail-classic2.jpg" />
               </div>
           
             </div>
             <div class="product-detail__content">
                 <h3 class="product-detail__title">CLÁSICA Nº1</h3>
-                <div class="product-detail__category">
                   <div class="product-detail__category">
                     <p class="product-detail__family">Familia ofativa Cítrica</p>
                     <p class="product-detail__type">Agua de Perfume</p>
                     <p class="product-detail__note">Notas olfativas: Limón, hojas de higuera, verbena.</p>
                   </div>
-                </div>
-                <details class="details__wrapper details__wrapper">
+                <details class="details__wrapper">
               <summary class="details__title">
                 <span>Tamaños disponibles</span>
                 <p class="details__icons ">
@@ -109,7 +108,7 @@
                 </li>
               </ul>
             </details>
-            <details class="details__wrapper details__wrapper">
+            <details class="details__wrapper">
               <summary class="details__title">
                 <span>Formatos disponibles</span>
                 <p class="details__icons ">
@@ -134,7 +133,7 @@
                 </li>
               </ul>
             </details>
-            <details class="details__wrapper details__wrapper">
+            <details class="details__wrapper">
               <summary class="details__title">
                 <span>Ingredientes</span>
                 <p class="details__icons ">
@@ -152,7 +151,7 @@
                 </li>
               </ul>
             </details>
-                  <button class="button button-primary">Añadir a la cesta</button>
+                  <button class="button button--primary">Añadir a la cesta</button>
             </div>
           
             <section class="section  ">
@@ -185,7 +184,7 @@
     
     <p class="text-center">También te puede interesar: </p>
 
-      <!-- Productos -->
+      <!-- Products -->
     <ul class="product-list">
       <li class="product-card">
         <article class="product-card__item">
@@ -196,7 +195,7 @@
           </a>
           <p class="product-card__note">Cítrica<br><span class="product-card__type">Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -211,7 +210,7 @@
           </a>
           <p class="product-card__note">Calma<br><span class="product-card__type">Agua de Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -226,7 +225,7 @@
           </a>
           <p class="product-card__note">Blanca<br><span class="product-card__type">Agua de Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -241,7 +240,7 @@
           </a>
           <p class="product-card__note">Floral<br><span class="product-card__type">Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -253,7 +252,7 @@
 
 
     <!-- Main bottom section-->
-    <div id="main-bottom" class="main-bottom">
+    <div id="main-bottom" class="main-bottom"></div>
   </main>
   <!--Footer -->
   <footer id="footer" class="footer">
@@ -263,7 +262,7 @@
   <script src="js/include-html.js"></script>
   <script src="js/icons.js"></script>
   <script src="js/carousel.js"></script>
-  <script src="js/carousel-thubnails.js"></script>
+  <script src="js/carousel-thumbnails.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/responsive.js"></script>
   <script>

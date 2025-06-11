@@ -61,7 +61,7 @@
 }
 
 
-.section--home__image {
+.section__image--home {
     width: 100%;
 }
 
@@ -87,7 +87,7 @@
     background-color: var(--background-color-tertiary);
 }
 
-.sections--product__wrapper {
+.sections__wrapper--product {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-large);
@@ -99,7 +99,7 @@
     gap: var(--spacing-small);
 }
 
-.section--product__image {
+.section__image--product {
     width: 100%;
 }
 

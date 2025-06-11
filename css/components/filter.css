@@ -1,6 +1,6 @@
 /* Filter */
 
-.filters {
+.filter {
     display: flex;
     flex-direction: column;
     font-size: var( --font-size-small);
@@ -58,7 +58,7 @@
 /* Responsive - Media Query*/
 @media screen and (min-width: 768px) {
 
-    .filters {
+    .filter {
         font-size: var(--font-size-x-medium);
         line-height:var(--line-height-x-medium);
     }

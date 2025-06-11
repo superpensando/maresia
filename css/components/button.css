@@ -12,13 +12,13 @@
     font-weight: var(--typography-semibold-weight);
 }
 
-.button-primary {
+.button--primary {
     color:var(--text-color-primary);
     background-color: var(--interaction-color-primary);
 } 
 
-.button-primary:hover,
-.button-primary:focus,
-.button-primary:active {
+.button--primary:hover,
+.button--primary:focus,
+.button--primary:active {
      background-color: var(--interaction-color-primary-hover);
 }

@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <title>Maresía </title>
-  <base href="/" /> <!-- Define base path for relative URLs -->
+  <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive viewport -->
   <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" /> <!-- Favicon -->
   <link rel="stylesheet" href="./css/styles.css" /> <!-- General Styles-->
-  </style>
 </head>
-
 <body>
-
-
-  <!--Header -->
+  <!-- Header -->
   <header id="header" class="header">
   </header>
   <!--Carousel  Main -->
   <div class="carousel__wrapper">
-    <div class="carousel carousel-home" id="carouselHome">
+    <div class="carousel carousel--home" id="carouselHome">
 
       <div class="carousel__track">
         <section class="carousel__item">
@@ -38,11 +33,10 @@
               alt="Frascos de perfume Maresía con ingredientes mediterráneos" width="1444" height="620"
               class="carousel__image" loading="lazy" decoding="async" />
           </picture>
-
         </section>
       </div>
       <div class="carousel__actions">
-        <button class="button button-primary"><span>Descubre</span><span class="only-desktop">nuestra nueva
+        <button class="button button--primary"><span>Descubre</span><span class="only-desktop">nuestra nueva
             colección</span></button>
         <div class="carousel-paginator" id="carouselPaginator">
           <span class="carousel-paginator__dot isActive" data-index="0"></span>
@@ -52,33 +46,35 @@
 
     </div>
   </div>
+  <!--Content Main -->
   <main class="main">
 
-    <!-- quote-->
+    <!-- Quote-->
     <blockquote class="quote">
       “Allí donde el mar susurra, nace el aroma que toca el alma”
     </blockquote>
-    <!--home sections-->
+
+    <!--Sections Home-->
     <nav class="sections sections--home ">
       <!--Collections-->
       <section class="section section--home ">
         <h2 class="section__title">Colecciones</h2>
         <a href="products.html" class="section__link" aria-label="Ver todas las colecciones de Maresía">
-          <img src="./assets/images/home/home-colection.jpg" alt="Maresía colecciones" class="section--home__image"
-            loading="lazy" decoding="async" />
+          <img src="./assets/images/home/home-colection.jpg" alt="Maresía colecciones"
+            class="section__image section__image--home" loading="lazy" decoding="async" />
         </a>
       </section>
       <!--section--home-->
       <section class="section--home section">
         <h2 class="section__title">Novedades</h2>
-        <a href="#" class="section__link" aria-label="View all Maresía new arrivals">
-          <img src="./assets/images/home/home-news.jpg" alt="Maresía novedades" class="section--home__image"
-            loading="lazy" decoding="async" />
+        <a href="#" class="section__link" aria-label="View all Maresía novedades">
+          <img src="./assets/images/home/home-news.jpg" alt="Maresía novedades"
+            class="section__image section__image--home" loading="lazy" decoding="async" />
         </a>
       </section>
     </nav>
 
-    <!-- Home Press  Carousel -->
+    <!-- Carousel Press -->
     <div class="carousel-press__wrapper">
       <h2 class="section__title"><span>Sobre</span> MARESÍA</h2>
       <div class="carousel-press" id="carouselPress">
@@ -134,7 +130,7 @@
       </div>
     </div>
 
-    <!-- Home Testimonials -->
+    <!-- Testimonials -->
     <section class="home-testimonials" aria-labelledby="home-home-testimonials-title">
 
       <div class="home-testimonials__wrapper">
@@ -206,19 +202,17 @@
       </div>
     </section>
 
-    <!-- Main bottom section-->
-    <div id="main-bottom" class="main-bottom">
-      </footer>
+    <!-- Main bottom-->
+    <div id="main-bottom" class="main-bottom"></div>
 
   </main>
   <!--Footer -->
   <footer id="footer" class="footer">
   </footer>
-
   <script src="js/include-html.js"></script>
   <script src="js/icons.js"></script>
   <script src="js/carousel.js"></script>
-  <script src="js/carousel-thubnails.js"></script>
+  <script src="js/carousel-thumbnails.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/responsive.js"></script>
   <script>
@@ -228,5 +222,4 @@
   </script>
 
 </body>
-
 </html>

@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>Maresía </title>
-  <base href="/" /> <!-- Define base path for relative URLs -->
+  <base href="/" />
   <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive viewport -->
   <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" /> <!-- Favicon -->
   <link rel="stylesheet" href="./css/styles.css" /> <!-- General Styles-->
-  </style>
 </head>
 
 <body>
@@ -32,9 +31,11 @@
       </div>
     </div>
   </div>
-  <main class="main main-internal">
 
-    <!-- quote-->
+  <!--Content Main Internal-->
+  <main class="main main--internal">
+
+    <!-- Quote-->
     <blockquote class="quote only-desktop">
       “Allí donde el mar susurra, nace el aroma que toca el alma”
     </blockquote>
@@ -53,12 +54,12 @@
     <!-- Collections -->
     <nav class="sections sections--product ">
       <!-- Classic Edition -->
-      <div class="sections--product__wrapper">
+      <div class="sections__wrapper--product">
         <section class="section section--product">
           <h2 class="section__title">Colección <br /> Clásica</h2>
           <a href="products-detail.html" class="section__link" aria-label="Ver colección clássica de Maresía">
             <img src="./assets/images/product/product-classic-edition.jpg" alt="Maresía Edición Clásica"
-              class="section--product__image" loading="lazy" decoding="async" />
+              class="section__image--product" loading="lazy" decoding="async" />
           </a>
         </section>
         <!-- Marina Edition -->
@@ -67,17 +68,17 @@
           <a href="products-detail.html" class="section__link" aria-label="Ver colección Marina de Maresía">
 
             <img src="./assets/images/product/product-marina-edition.jpg" alt="Maresía Edición Marina"
-              class="section--product__image" loading="lazy" decoding="async" />
+              class="section__image--product" loading="lazy" decoding="async" />
           </a>
         </section>
       </div>
-      <div class="sections--product__wrapper">
+      <div class="sections__wrapper--product">
         <!-- Limited Edition Calm-->
         <section class="section section--product">
           <h2 class="section__title">E. Limitada <br /> Calma</h2>
           <a href="products-detail.html" class="section__link" aria-label="Ver colección clássica de Maresía">
             <img src="./assets/images/product/product-limited-edition-calm.jpg" alt="Maresía Edición Limitada Calma"
-              class="section--product__image" loading="lazy" decoding="async" />
+              class="section__image--product" loading="lazy" decoding="async" />
           </a>
         </section>
         <!-- Limited Edition Arcilla-->
@@ -86,18 +87,19 @@
           <a href="products-detail.html" class="section__link" aria-label="Ver colección Marina de Maresía">
 
             <img src="./assets/images/product/product-limited-edition-arcilla.jpg" alt="Maresía Edición Limitada Arc"
-              class="section--product__image" loading="lazy" decoding="async" />
+              class="section__image--product" loading="lazy" decoding="async" />
           </a>
         </section>
       </div>
     </nav>
 
-    <!-- Filters -->
-    <div class="filters">
+    <!-- filter -->
+    <div class="filter">
       <div class="filter__wrapper">
         <div class="filter-controls">
           <button class="filter__button" aria-expanded="false" aria-controls="filter-options">
-            <span>Filtrar resultados</span></Filtrar> <i data-icon="arrow-down" class="filter__icon icon-arrow-down"></i>
+            <span>Filtrar resultados</span></Filtrar> <i data-icon="arrow-down"
+              class="filter__icon icon-arrow-down"></i>
           </button>
         </div>
         <div class="filter-sort">
@@ -119,7 +121,7 @@
       </div>
     </div>
 
-    <!-- Productos -->
+    <!-- Products -->
     <ul class="product-list">
       <li class="product-card">
         <article class="product-card__item">
@@ -130,7 +132,7 @@
           </a>
           <p class="product-card__note">Cítrica<br><span class="product-card__type">Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -145,7 +147,7 @@
           </a>
           <p class="product-card__note">Calma<br><span class="product-card__type">Agua de Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -160,7 +162,7 @@
           </a>
           <p class="product-card__note">Blanca<br><span class="product-card__type">Agua de Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -175,7 +177,7 @@
           </a>
           <p class="product-card__note">Floral<br><span class="product-card__type">Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -190,7 +192,7 @@
           </a>
           <p class="product-card__note">Salina<br><span class="product-card__type">Agua de Perfume</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -205,7 +207,7 @@
           </a>
           <p class="product-card__note">-<br><span class="product-card__type">-</span></p>
           <p class="product-card__price">Desde € 0.00</p>
-          <button class="button button-primary">Añadir a la cesta</button>
+          <button class="button button--primary">Añadir a la cesta</button>
           <button class="product-card__button" aria-label="Añadir a favoritos">
             <i data-icon="favorite" class="product-card__icon icon-favorite"></i>
           </button>
@@ -213,12 +215,8 @@
       </li>
     </ul>
 
-
-
-
-
     <!-- Main bottom section-->
-    <div id="main-bottom" class="main-bottom">
+    <div id="main-bottom" class="main-bottom"></div>
   </main>
   <!--Footer -->
   <footer id="footer" class="footer">
@@ -227,7 +225,7 @@
   <script src="js/include-html.js"></script>
   <script src="js/icons.js"></script>
   <script src="js/carousel.js"></script>
-  <script src="js/carousel-thubnails.js"></script>
+  <script src="js/carousel-thumbnails.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/responsive.js"></script>
   <script>
