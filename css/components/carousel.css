@@ -197,7 +197,7 @@
     height: 620px;
   }
   .carousel__actions {
-    padding: var(--spacing-small) var(--spacing-xxxxx-large);
+    padding: var(--spacing-large) var(--spacing-xxxxx-large);
   }
 
   /* Carousel Thumb  */
