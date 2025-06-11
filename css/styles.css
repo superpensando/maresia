@@ -29,10 +29,12 @@
 @import url("./components/button.css");
 @import url("./components/breadcrumb.css");
 @import url("./components/form-fields.css");
-@import url("./components/header.css");
-@import url("./components/footer.css");
+
 
 /* Components pages */
+@import url("./components/details-list.css");
+@import url("./components/header.css");
+@import url("./components/footer.css");
 @import url("./components/accesibility.css");
 @import url("./components/social-network.css");
 @import url("./components/carousel.css");
@@ -40,6 +42,7 @@
 @import url("./components/testimonials.css ");
 @import url("./components/sections.css ");
 @import url("./components/product-card.css");
+@import url("./components/product-detail.css");
 @import url("./components/filter.css");
 
 

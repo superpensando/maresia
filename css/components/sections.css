@@ -5,18 +5,25 @@
 .sections {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
 }
 
 .section {
-    display:flex;
-    flex-direction: column ;
+    display: flex;
+    flex-direction: column;
 }
 
+.section__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+}
+
+
 .section__title {
-    font-size:var(--font-size-xx-large);
-    line-height:var(--line-height-xx-large);
-    font-family:var(--typography-family-secondary);
+    font-size: var(--font-size-xx-large);
+    line-height: var(--line-height-xx-large);
+    font-family: var(--typography-family-secondary);
     font-weight: var(--typography-bold-weight);
     text-transform: uppercase;
     text-align: center;
@@ -25,7 +32,12 @@
 .section__subtitle {
     font-size: var(--font-size-x-medium);
     line-height: var(--line-height-x-medium);
-    font-weight: var( --typography-semibold-weight);
+    font-weight: var(--typography-semibold-weight);
+}
+
+.section__desc {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
 }
 
 .section__title span {
@@ -33,9 +45,9 @@
 }
 
 .section__link {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -43,53 +55,48 @@
 .sections--home {
     gap: var(--spacing-large);
 }
+
 .section--home {
-    gap:var(--spacing-small);
+    gap: var(--spacing-small);
 }
 
 
 .section--home__image {
-   width: 100%;
+    width: 100%;
 }
 
 /* Section About Maresia */
-.section--about-maresia {
+/* Section Product Detail */
+.section--about-maresia,
+.section--product-detail {
     padding: var(--spacing-large);
     gap: var(--spacing-large);
-    background-color:var(--background-color-tertiary);
+    background-color: var(--background-color-tertiary);
 }
 
-.section--about-maresia__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap:var(--spacing-large);
-}
-
-.section--about-maresia__desc {
-    font-size:var(--font-size-small);
-    line-height:var(--line-height-small);
-}
 
 .section--about-maresia__image {
-   width: 100%;
+    width: 100%;
 }
 
 
 /* Section Products */
 .sections--product {
-    padding:var(--spacing-large);
-    gap:var(--spacing-large); 
+    padding: var(--spacing-large);
+    gap: var(--spacing-large);
     background-color: var(--background-color-tertiary);
 }
+
 .sections--product__wrapper {
     display: flex;
-    flex-direction: row;  
-    gap:var(--spacing-large);   
+    flex-direction: row;
+    gap: var(--spacing-large);
 }
+
 .section--product {
-    width:50%;
+    width: 50%;
     align-items: center;
-    gap: var(--spacing-small); 
+    gap: var(--spacing-small);
 }
 
 .section--product__image {
@@ -99,44 +106,55 @@
 
 /* Responsive - Media Query*/
 
-@media screen and  (max-width: 400px) { 
+@media screen and (max-width: 400px) {
     .section__title {
-        font-size:var(--font-size-medium);
-        line-height:var(--line-height-medium);
+        font-size: var(--font-size-medium);
+        line-height: var(--line-height-medium);
 
     }
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
     .sections {
-       flex-direction: row;
-       justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .section__title {
-        font-size:var(--font-size-xx-large);
-        line-height:var(--line-height-xx-large);
-    } 
+        font-size: var(--font-size-xx-large);
+        line-height: var(--line-height-xx-large);
+    }
+
+    .section__desc {
+        font-size: var(--font-size-large);
+        line-height: var(--line-height-large);
+    }
 
     /* Section About Maresia */
-    .section--about-maresia {
+    /* Section Product Detail */
+    .section--about-maresia,
+    .section--product-detail {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         gap: var(--spacing-xxxxx-large);
-        padding:var(--spacing-xxxxx-large);
-        
+        padding: var(--spacing-xxxxx-large);
+
     }
-    .section--about-maresia:has(.section--about-maresia__figure) .section--about-maresia__wrapper {
+
+    .section--about-maresia:has(.section--about-maresia__figure) .section__wrapper {
         max-width: 65%;
     }
-    .section--about-maresia-eco .section--about-maresia__figure {
-        order:1; 
-    }
-    .section--about-maresia-eco .section--about-maresia__wrapper {
 
-        order:0; 
+    .section--about-maresia-eco .section--about-maresia__figure {
+        order: 1;
     }
+
+    .section--about-maresia-eco .section__wrapper {
+
+        order: 0;
+    }
+
     .section--about-maresia .section__title {
         text-align: left;
     }
@@ -151,9 +169,9 @@
 }
 
 
-@media screen and (min-width: 1024px) { 
-     .section__title {
-        font-size:var(--font-size-huge);
-        line-height:var(--line-height-huge);
-    } 
+@media screen and (min-width: 1024px) {
+    .section__title {
+        font-size: var(--font-size-huge);
+        line-height: var(--line-height-huge);
+    }
 }

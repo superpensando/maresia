@@ -1,0 +1,87 @@
+/* details list */
+
+
+.details__wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.details__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: var(--spacing-xxx-small);
+    border-bottom: 1px solid var(--text-color-primary);
+}
+
+
+
+.details__icons{
+    display: flex;
+    align-items: center;
+}
+
+.details__icon {
+    position: relative;
+    top: 3px;
+}
+
+.details__icon svg path {
+    stroke: var(--text-color-primary);
+}
+
+.details__list {
+    display:flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: var(--spacing-x-small) var(--spacing-x-small) var(--spacing-small) var(--spacing-small);
+    gap:5px;
+}
+
+.details__item {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.details__item  span {
+    font-size: var(--font-size-small);
+    line-height: var(--font-size-small);
+ }
+
+
+/*The open attribute is specific to the <details> element.*/
+.details__wrapper[open] .details__icon.icon-plus,
+.details__wrapper .details__icon.icon-minus {
+    display: none;
+}
+
+.details__wrapper .details__icon.icon-plus,
+.details__wrapper[open] .details__icon.icon-minus {
+    display: block;
+}
+
+.details__wrapper[open] .details__list {
+    max-height: 200px;
+    transition: max-height 0.4s ease;
+}
+
+
+/* Responsive - Media Query*/
+@media screen and (min-width: 1024px) {
+
+  .details__title {
+    font-size:20px; 
+  }
+  .details__item span {
+    font-size:18px;
+  }
+
+
+}
