@@ -125,9 +125,10 @@
         line-height: var(--line-height-xx-large);
     }
 
-    .section__desc {
-        font-size: var(--font-size-large);
-        line-height: var(--line-height-large);
+    .section__desc,
+    .section__subtitle {
+        font-size: var(--font-size-x-medium);
+        line-height: var(--line-height-x-medium);
     }
 
     /* Section About Maresia */

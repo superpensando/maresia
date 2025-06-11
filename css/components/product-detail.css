@@ -5,28 +5,30 @@
 .product-detail__content  {
     display:flex;
     flex-direction: column;
-    gap:20px;   
+    gap: var( --spacing-large);  
 }
 
 .product-detail-section {
     font-family: var(--typography-family-secondary);
-     text-align:center;
-     font-size: 20px;
-     font-weight: 600;
+     text-align: center;
+     font-size: var(--font-size-large);
+     line-height: var(--line-height-large);
+     font-weight: var(--typography-semibold-weight);
      text-transform: uppercase;
 }
 
 .product-detail__category {
     display:flex;
     flex-direction: column;
-    gap:20px;
+    gap: var( --spacing-large);
 }
 
 .product-detail__title {
     text-align: center;
     font-family: var(--typography-family-secondary);
-    font-size:22px;
-    font-weight:700;
+    font-size:var(--font-size-x-large);
+    line-height:var(--line-height-x-large);
+    font-weight:var(--typography-bold-weight);
 }
 
 .product-detail__category {
@@ -36,16 +38,19 @@
 }
 
 .product-detail__family{
-    font-size:18px;
-    font-weight:600;
+    font-size: var(--font-size-x-medium);
+    line-height: var(--font-size-x-medium);
+    font-weight: var(--typography-semibold-weight);
 }
 .product-detail__type {
-    font-size:18px;
+    font-size: var(--font-size-x-medium);
+    line-height: var(--font-size-x-medium);
 }
 
 .product-detail__note,
 .product-detail__price {
-    font-size:14px;
+    font-size:var( --font-size-small);
+    line-height: var(--line-height-small);
 }
 
 
@@ -55,7 +60,7 @@
     .product-detail__wrapper {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 60px; 
+        gap: var( --spacing-xxxxx-large);
     }
     .product-detail__wrapper > * {
         width:calc( 50% - 30px);
@@ -67,14 +72,17 @@
     }
 
     .product-detail__title { 
-        font-size: 24px; 
+        font-size: var(--font-size-xx-large);
+        line-height: var(--line-height-xx-large);
     }
     .product-detail__family,
     .product-detail__type {
-        font-size: 20px; 
+        font-size: var(--font-size-large);
+        line-height: var(--line-height-large);
     }
      .product-detail__note {
-        font-size: 18px; 
+        font-size: var(--font-size-x-medium);
+        line-height: var(--font-size-x-medium);
     }
 
 }
