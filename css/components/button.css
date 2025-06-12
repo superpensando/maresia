@@ -13,7 +13,7 @@
 }
 
 .button--primary {
-    color:var(--text-color-primary);
+    color:var(--text-color-primary-static);
     background-color: var(--interaction-color-primary);
 } 
 

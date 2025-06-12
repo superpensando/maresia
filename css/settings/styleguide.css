@@ -9,6 +9,7 @@
     --basic-color-secondary: #FFFF; 
    
     --text-color-primary: #1E212D;
+    --text-color-primary-static: #1E212D;
     --text-color-secondary: #93BBE3;
     --text-color-tertiary: #F9F1EA;
     --text-color-error: #A41919; 
@@ -75,4 +76,12 @@
     --breakpoint-desktop: 1440px;  /* Max width for Maresía's main layout */
 
 
+}
+
+.dark {
+
+    --basic-color-secondary: #1E212D;
+    --text-color-primary: #F9F1EA;
+    --text-color-primary-static: #1E212D;
+    --background-color-tertiary:  #2F4568;
 }

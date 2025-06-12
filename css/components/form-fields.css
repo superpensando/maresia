@@ -48,7 +48,7 @@
 .form-field__select {
   position: relative;
   padding: var(--spacing-xx-small) var(--spacing-xxx-large) var(--spacing-xx-small) var(--spacing-small);
-  border-bottom: 1px solid var(--background-color-tertiary);
+  border-bottom: 1px solid var(--text-color-tertiary);
   cursor: pointer;
 }
 

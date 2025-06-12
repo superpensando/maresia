@@ -22,6 +22,11 @@
     border-bottom: 1px solid var(--text-color-primary);
 }
 
+.filter-controls span,
+.filter-sort span {
+      color: var(--text-color-primary);
+} 
+
 .filter__button {
     display: flex;
     align-items: center;
@@ -38,11 +43,13 @@
 
 
 .filter__icon svg path {
-    fill: var(--text-color-primary);
+    fill: var(--basic-color-secondary);
+    stroke: var(--basic-color-secondary);
 }
 
 .filter__icon.icon-grid svg path {
-    fill: var(--basic-color-secondary);
+    fill: var(--text-color-primary);
+    stroke: var(--basic-color-secondary);
     stroke-width: 1;
 }
 
