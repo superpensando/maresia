@@ -18,18 +18,18 @@
   </header>
 
   <!--Carousel  Main -->
-  <div class="carousel__wrapper">
-    <div class="carousel" id="carouselAboutMaresia">
+  <div class="carousel__wrapper"  role="region" aria-roledescription="carrusel" aria-label="Galería principal Sobre Maresía">
+    <div class="carousel" id="carouselAboutMaresia" aria-live="polite">
 
-      <div class="carousel__track">
-        <section class="carousel__item">
+      <div class="carousel__track" role="list">
+        <div class="carousel__item" role="listitem">
           <picture>
             <source srcset="./assets/images/about-maresia/about-maresia-carousel1-1x.webp" type="image/webp" />
             <source srcset="./assets/images/about-maresia/about-maresia-carousel1-1x.jpg" type="image/jpeg" />
             <img src="./assets/images/about-maresia/about-maresia-carousel1-1x.jpg" alt="Maresía procesos artesanales"
               width="1444" height="620" class="carousel__image" loading="lazy" decoding="async" />
           </picture>
-        </section>
+        </div>
       </div>
     </div>
   </div>
@@ -43,29 +43,27 @@
       “Allí donde el mar susurra, nace el aroma que toca el alma”
     </blockquote>
 
-    <!-- Breadcrumb -->
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+   <!-- Breadcrumb -->
+    <nav class="breadcrumb" role="navigation" aria-label="Ruta de navegación">
       <ul class="breadcrumb__list">
-        <li class="breadcrumb__item">
-          <a href="/" class="breadcrumb__link">Home</a>
-        </li>
+        <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Inicio</a></li>
         <li class="breadcrumb__separator" aria-hidden="true">/</li>
         <li class="breadcrumb__item" aria-current="page">Sobre Maresía</li>
       </ul>
     </nav>
 
     <!--Carousel  About Maresia -->
-    <div class="carousel-thumb carousel-thumb--about-maresia">
+    <div class="carousel-thumb carousel-thumb--about-maresia" role="region" aria-roledescription="carrusel de miniaturas" aria-label="Galería de imágenes Sobre Maresía">
       <figure class="carousel-thumb__main">
         <img class="carousel-thumb__image" src="./assets/images/about-maresia/about-maresia-rechargable.jpg"
-          alt="Imagen principal" id="mainImage" />
+          alt="Frasco recargable Maresía en pueblo Mediterráneo" id="mainImage" />
         <figcaption class="carousel-thumb__caption" >Nuestra filosofía en Imágenes</figcaption>
       </figure>
       <div class="carousel-thumb__thumbnails">
-        <img src="./assets/images/about-maresia/about-maresia-rechargable.jpg" alt="Maresía Filosofía"
+        <img src="./assets/images/about-maresia/about-maresia-rechargable.jpg" alt="Miniatura: Frasco recargable Maresía"
           class="carousel-thumb__thumbanils-image isActive"
           data-full="./assets/images/about-maresia/about-maresia-rechargable.jpg" />
-        <img src="./assets/images/about-maresia/about-maresia-carousel1-1x.jpg" alt="Maresía Proceso artesanal"
+        <img src="./assets/images/about-maresia/about-maresia-carousel1-1x.jpg" alt="Miniatura: Proceso artesanal Maresía"
           class="carousel-thumb__thumbanils-image" data-full="./assets/images/about-maresia/about-maresia-proceso-artesanal.jpg" />
       </div>
     </div>
