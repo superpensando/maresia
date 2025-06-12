@@ -9,10 +9,12 @@
     <nav class="header__nav only-desktop" aria-label="Navegación principal">
         <ul class="header__nav-list">
             <li class="header__nav-item">
-                <a class="header__nav-link" href="products.html" title="Ver todos los productos de Maresía">Productos</a>
+                <a class="header__nav-link" href="products.html"
+                    title="Ver todos los productos de Maresía">Productos</a>
             </li>
             <li class="header__nav-item">
-                <a class="header__nav-link" href="about-maresia.html" title="Conoce la historia de Maresía">Sobre Maresía</a>
+                <a class="header__nav-link" href="about-maresia.html" title="Conoce la historia de Maresía">Sobre
+                    Maresía</a>
             </li>
             <li class="header__nav-item">
                 <a class="header__nav-link" href="#" title="Descubre la Aromatología Mediterránea">Aromatología</a>
@@ -32,8 +34,77 @@
         <button class="header__button" aria-label="Usuario">
             <i data-icon="user" class="header__icon icon-user"></i>
         </button>
-        <button class="header__button only-mobile" aria-label="Menú">
+        <button class="header__button header__button-menu only-mobile" aria-label="Menú">
             <i data-icon="menu" class="header__icon icon-menu"></i>
         </button>
     </nav>
 </div>
+
+<!--Menu-->
+<nav class="menu only-mobile" aria-label="Menú principa">
+    <div class="menu__header">
+        <div class="header__logo">
+            <span class="header__logo-text">Maresía</span>
+            <a class="header__logo-link" href="index.html" title="Maresía" aria-label="Ir al inicio de Maresía">
+                <img class="header__logo-image" src="./assets/images/logos/logo-maresia-interactive.svg"
+                    alt="Logo Maresía" />
+            </a>
+        </div>
+        <nav class="header__actions" aria-label="Header Call to action">
+            <button class="header__button" aria-label="Buscar">
+                <i data-icon="search" class="header__icon icon-search"></i>
+            </button>
+            <button class="header__button" aria-label="Carrito">
+                <i data-icon="shopping-cart" class="header__icon icon-cart"></i>
+            </button>
+            <button class="header__button" aria-label="Usuario">
+                <i data-icon="user" class="header__icon icon-user"></i>
+            </button>
+            <button class="header__button header__button-close only-mobile" aria-label="Cerrar Menú">
+                <i data-icon="close" class="header__icon icon-close"></i>
+            </button>
+        </nav>
+    </div>
+
+    <nav class="menu__nav" aria-label="Navegación menu">
+        <ul class="menu__nav-list">
+            <li class="menu__nav-item">
+                <a href="products.html" class="menu__nav-link">Productos</a>
+            </li>
+            <li class="menu__nav-item">
+                <a href="about-maresia.html" class="menu__nav-link">Sobre Maresía</a>
+            </li>
+            <li class="menu__nav-item">
+                <a href="#" class="menu__nav-link">Aromatología</a>
+            </li>
+            <li class="menu__nav-item">
+                <a href="#" class="menu__nav-link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="menu-social-network social-netwok">
+        <a href="#" class="social-netwok__link" aria-label="Instagram de Maresía">
+            <i class="social-netwok__icon icon-instagram" data-icon="instagram"></i>
+        </a>
+        <a href="#" class="social-netwok__link" aria-label="Facebook de Maresía">
+            <i class="social-netwok__icon icon-facebook" data-icon="facebook"></i>
+        </a>
+    </div>
+
+    <div class="menu-accesibility " aria-label="Accesibilidad">
+        <div class="accesibility">
+            <div class="accesibility-mode">
+                <button class="accesibility-mode__button" aria-label="Modo light">
+                    <i class="accesibility-mode__icon icon-light" data-icon="light"></i>
+                </button>
+                <button class="accesibility-mode__button" aria-label="Modo dark">
+                    <i class="accesibility-mode__icon icon-dark" data-icon="dark"></i>
+                </button>
+            </div>
+            <a href="#" class="accesibility__link" aria-label="Tamaño de fuente">
+                Accesibilidad Aa
+            </a>
+        </div>
+    </div>
+</nav>

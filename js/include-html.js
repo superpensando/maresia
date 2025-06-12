@@ -1,3 +1,5 @@
+/* Include HTML  */
+
 function includeFragment(url, selector, ...callbacks) {
   const target = document.querySelector(selector);
 
@@ -20,6 +22,6 @@ function includeFragment(url, selector, ...callbacks) {
     })
     .catch(error => {
       console.error(error);
-      target.innerHTML = "<!-- fragment include failed -->";
+      target.innerHTML = "Failed";
     });
 }

@@ -1,14 +1,15 @@
+/* Details Open by Responsive */
+
 window.addEventListener("resize", () => updateFooterNavState(768));
 
-// Responsive only for Footer
 function updateFooterNavState(breakpoint = 768) {
   const isDesktop = window.innerWidth >= breakpoint;
 
   document.querySelectorAll('.details__wrapper').forEach((el) => {
     if (isDesktop) {
-      el.open = true;
+      el.open = true; // only Desktop open
     } else {
-      el.open = false; 
+      el.open = false; // only Mobile close
     }
   });
 }

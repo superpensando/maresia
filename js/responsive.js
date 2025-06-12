@@ -1,3 +1,5 @@
+// Responsive Only-mobile / Only Desktop
+
 window.addEventListener("resize", () => updateResponsiveVisibility(1024));
 window.addEventListener("load", () => updateResponsiveVisibility(1024));
 

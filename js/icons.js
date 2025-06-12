@@ -1,4 +1,4 @@
-/* js/include-icons.js */
+/* Inject Icons SVG */
 
 function injectIcons(basePath = "../assets/icons", prefix = "i-") {
   const icons = document.querySelectorAll("[data-icon]");

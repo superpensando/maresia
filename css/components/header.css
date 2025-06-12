@@ -13,6 +13,7 @@
     max-width: var(--breakpoint-desktop);
     padding: var(--spacing-xx-small) var(--spacing-large);
     width: 100%;
+    min-height: 54px;
 }
 
 /* Header Logo */
