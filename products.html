@@ -17,17 +17,17 @@
   </header>
 
   <!--Carousel Main -->
-  <div class="carousel__wrapper" aria-roledescription="carrusel" aria-label="Galería principal Sobre Maresía">
+  <div class="carousel__wrapper"  role="region" aria-roledescription="carrusel" aria-label="Galería principal productos Maresía">
     <div class="carousel" id="carouselProducts" aria-live="polite">
       <div class="carousel__track" role="list">
-        <section class="carousel__item" role="listitem">
+        <div class="carousel__item" role="listitem">
           <picture>
             <source srcset="./assets/images/product/product-maresia-carousel1-1x.webp" type="image/webp" />
             <source srcset="./assets/images/product/product-maresia-carousel1-1x.jpg" type="image/jpeg" />
             <img src="./assets/images/product/product-maresia-carousel1-1x.jpg" alt="Procesos selección de productos"
               width="1444" height="620" class="carousel__image" loading="lazy" decoding="async" />
           </picture>
-        </section>
+        </div>
       </div>
     </div>
   </div>
@@ -92,18 +92,18 @@
     </nav>
 
     <!-- filter -->
-    <div class="filter" role="region" aria-labelledby="Controles de filtrado">
+    <div class="filter" role="region">
       <div class="filter__wrapper">
         <div class="filter-controls">
-          <button class="filter__button" aria-expanded="false" aria-controls="filter-options"
+          <button class="filter__button" aria-expanded="false" aria-controls="Opciones de filtrar"
             aria-label="Abrir opciones de filtro">
             <span>Filtrar resultados</span>
             <i data-icon="arrow-down" class="filter__icon icon-arrow-down"></i>
           </button>
         </div>
         <div class="filter-sort">
-          <button class="filter__button" aria-expanded="false" aria-controls="filter-options"
-            aria-label="Abrir opciones de filtro">
+          <button class="filter__button" aria-expanded="false" aria-controls="Opciones de ordenar"
+            aria-label="Abrir opciones de ordenar">
             <span>Ordenar por</span>
             <i data-icon="arrow-down" class="filter__icon icon-arrow-down"></i>
           </button>
