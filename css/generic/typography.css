@@ -27,7 +27,7 @@
 
 /* Nunito Bold - 700 */
 @font-face {
-  font-family: "Nunito"f;
+  font-family: "Nunito";
   src: url('../../assets/fonts/nunito/Nunito-Bold.woff2') format('woff2'),
     url('../../assets/fonts/nunito/Nunito-Bold.woff') format('woff');
   font-weight: 700;
