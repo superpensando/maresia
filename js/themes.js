@@ -1,6 +1,6 @@
 /* Apply Themes (light, dark... N themes)*/
 
-function initThemeSwitcher() {
+function themes() {
   const iconDark  = document.querySelector('.icon-dark');
   const iconLight = document.querySelector('.icon-light');
 
