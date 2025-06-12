@@ -10,15 +10,14 @@
 </head>
 <body>
   <!-- Header -->
-  <header id="header" class="header" role="banner">
-    <!-- Contenido del header incluido aquí -->
+  <header id="header" class="header">
   </header>
 
   <!-- Carousel Main -->
   <div class="carousel__wrapper" role="region" aria-roledescription="carousel" aria-label="Galería principal">
     <div class="carousel carousel--home" id="carouselHome" aria-live="polite">
       <div class="carousel__track" role="list">
-        <section class="carousel__item" role="listitem">
+        <section class="carousel__item" >
           <picture>
             <source srcset="./assets/images/home/home-carousel1-1x.webp" type="image/webp" />
             <source srcset="./assets/images/home/home-carousel1-1x.jpg" type="image/jpeg" />
@@ -28,7 +27,7 @@
                  class="carousel__image" loading="lazy" decoding="async" />
           </picture>
         </section>
-        <section class="carousel__item" role="listitem">
+        <section class="carousel__item" >
           <picture>
             <source srcset="./assets/images/home/home-carousel2-1x.webp" type="image/webp" />
             <source srcset="./assets/images/home/home-carousel2-1x.jpg" type="image/jpeg" />
@@ -93,7 +92,7 @@
       <div class="carousel-press" id="carouselPress" role="region" aria-roledescription="carousel" aria-labelledby="press-title" aria-live="polite">
         <div class="carousel__track" role="list">
 
-          <section class="carousel__item" role="listitem">
+          <section class="carousel__item">
             <a href="https://www.vogue.es/" class="carousel-press__link"
                aria-label="Leer artículo en Vogue sobre Maresía">
               <picture class="carousel-press__picture">
@@ -107,7 +106,7 @@
             </a>
           </section>
 
-          <section class="carousel__item" role="listitem">
+          <section class="carousel__item">
             <a href="https://www.mujerhoy.com/" class="carousel-press__link"
                aria-label="Leer artículo en Mujer Hoy sobre Maresía">
               <picture class="carousel-press__picture">
@@ -121,7 +120,7 @@
             </a>
           </section>
 
-          <section class="carousel__item" role="listitem">
+          <section class="carousel__item">
             <a href="https://www.elle.com/es/" class="carousel-press__link"
                aria-label="Leer artículo en ELLE sobre Maresía">
               <picture class="carousel-press__picture">
@@ -152,8 +151,8 @@
       <h2 id="testimonials-title" class="visually-hidden">Testimonios de clientes</h2>
       <div class="home-testimonials__wrapper">
 
-        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial1-title">
-          <p class="home-testimonial__rating" aria-label="4 de 5 estrellas">
+        <article class="home-testimonial__article" aria-labelledby="testimonial1-title">
+          <p class="home-testimonial__rating" aria-labelledby="4 de 5 estrellas">
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
@@ -165,8 +164,8 @@
           <footer class="home-testimonial__author">— Alex</footer>
         </article>
 
-        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial2-title">
-          <p class="home-testimonial__rating" aria-label="4 de 5 estrellas">
+        <article class="home-testimonial__article"   aria-labelledby="testimonial2-title">
+          <p class="home-testimonial__rating" aria-labelledby="4 de 5 estrellas">
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
@@ -178,8 +177,8 @@
           <footer class="home-testimonial__author">— Lucía</footer>
         </article>
 
-        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial3-title">
-          <p class="home-testimonial__rating" aria-label="4 de 5 estrellas">
+        <article class="home-testimonial__article"   aria-labelledby="testimonial3-title">
+          <p class="home-testimonial__rating" aria-labelledby="4 de 5 estrellas">
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
@@ -191,8 +190,8 @@
           <footer class="home-testimonial__author">— Sandra</footer>
         </article>
 
-        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial4-title">
-          <p class="home-testimonial__rating" aria-label="5 de 5 estrellas">
+        <article class="home-testimonial__article" aria-labelledby="testimonial4-title">
+          <p class="home-testimonial__rating" aria-labelledby="5 de 5 estrellas">
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
@@ -213,7 +212,7 @@
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="footer" role="contentinfo">
+  <footer id="footer" class="footer">
   </footer>
 
   <script src="js/include-html.js"></script>
