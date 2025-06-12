@@ -1,8 +1,8 @@
 /* Details Open by Responsive */
 
-window.addEventListener("resize", () => updateFooterNavState(768));
+window.addEventListener("resize", () => updateDetailsState(768));
 
-function updateFooterNavState(breakpoint = 768) {
+function updateDetailsState(breakpoint = 768) {
   const isDesktop = window.innerWidth >= breakpoint;
 
   document.querySelectorAll('.details__wrapper').forEach((el) => {
