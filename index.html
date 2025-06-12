@@ -1,117 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="es" class="light">
 <head>
   <meta charset="utf-8" />
-  <title>Maresía </title>
+  <title>Maresía</title>
   <base href="/" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive viewport -->
-  <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" /> <!-- Favicon -->
-  <link rel="stylesheet" href="./css/styles.css" /> <!-- General Styles-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="favicon-maresia.ico" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
   <!-- Header -->
-  <header id="header" class="header">
+  <header id="header" class="header" role="banner">
+    <!-- Contenido del header incluido aquí -->
   </header>
-  <!--Carousel  Main -->
-  <div class="carousel__wrapper">
-    <div class="carousel carousel--home" id="carouselHome">
 
-      <div class="carousel__track">
-        <section class="carousel__item">
+  <!-- Carousel Main -->
+  <div class="carousel__wrapper" role="region" aria-roledescription="carousel" aria-label="Galería principal">
+    <div class="carousel carousel--home" id="carouselHome" aria-live="polite">
+      <div class="carousel__track" role="list">
+        <section class="carousel__item" role="listitem">
           <picture>
             <source srcset="./assets/images/home/home-carousel1-1x.webp" type="image/webp" />
             <source srcset="./assets/images/home/home-carousel1-1x.jpg" type="image/jpeg" />
-            <img src="./assets/images/home/home-carousel1-1x.jpg" alt="Maresía edición clásica mirando al mar"
-              width="1444" height="620" class="carousel__image" loading="lazy" decoding="async" />
+            <img src="./assets/images/home/home-carousel1-1x.jpg"
+                 alt="Maresía edición clásica mirando al mar"
+                 width="1444" height="620"
+                 class="carousel__image" loading="lazy" decoding="async" />
           </picture>
         </section>
-        <section class="carousel__item">
+        <section class="carousel__item" role="listitem">
           <picture>
             <source srcset="./assets/images/home/home-carousel2-1x.webp" type="image/webp" />
             <source srcset="./assets/images/home/home-carousel2-1x.jpg" type="image/jpeg" />
-            <img src="./assets/images/home/home-carousel1-1x.jpg"
-              alt="Frascos de perfume Maresía con ingredientes mediterráneos" width="1444" height="620"
-              class="carousel__image" loading="lazy" decoding="async" />
+            <img src="./assets/images/home/home-carousel2-1x.jpg"
+                 alt="Frascos de perfume Maresía con ingredientes mediterráneos"
+                 width="1444" height="620"
+                 class="carousel__image" loading="lazy" decoding="async" />
           </picture>
         </section>
       </div>
+
       <div class="carousel__actions">
-        <button class="button button--primary"><span>Descubre</span><span class="only-desktop">nuestra nueva
-            colección</span></button>
-        <div class="carousel-paginator" id="carouselPaginator">
-          <span class="carousel-paginator__dot isActive" data-index="0"></span>
-          <span class="carousel-paginator__dot" data-index="1"></span>
+        <button class="button button--primary"
+                aria-label="Descubre nuestra nueva colección">
+          <span>Descubre</span>
+          <span class="only-desktop">nuestra nueva colección</span>
+        </button>
+        <div class="carousel-paginator" id="carouselPaginator" role="group" aria-label="Navegación de diapositivas">
+          <span class="carousel-paginator__dot isActive" data-index="0" role="button" tabindex="0" aria-label="Slide 1" aria-pressed="true"></span>
+          <span class="carousel-paginator__dot" data-index="1" role="button" tabindex="0" aria-label="Slide 2" aria-pressed="false"></span>
         </div>
       </div>
-
     </div>
   </div>
-  <!--Content Main -->
+
+  <!-- Main Content -->
   <main class="main">
 
-    <!-- Quote-->
-    <blockquote class="quote">
+    <!-- Quote -->
+    <blockquote class="quote" aria-label="Slogan Maresía">
       “Allí donde el mar susurra, nace el aroma que toca el alma”
     </blockquote>
 
-    <!--Sections Home-->
-    <nav class="sections sections--home ">
-      <!--Collections-->
-      <section class="section section--home ">
-        <h2 class="section__title">Colecciones</h2>
-        <a href="products.html" class="section__link" aria-label="Ver todas las colecciones de Maresía">
-          <img src="./assets/images/home/home-colection.jpg" alt="Maresía colecciones"
-            class="section__image section__image--home" loading="lazy" decoding="async" />
+    <!-- Sections Home -->
+    <nav class="sections sections--home" aria-label="Secciones principales">
+      <!-- Collections -->
+      <section class="section section--home">
+        <h2 id="sect-collections" class="section__title">Colecciones</h2>
+        <a href="products.html" class="section__link" aria-labelledby="sect-collections">
+          <img src="./assets/images/home/home-colection.jpg"
+               alt="Vista de la sección Colecciones de Maresía"
+               class="section__image section__image--home"
+               loading="lazy" decoding="async" />
         </a>
       </section>
-      <!--section--home-->
-      <section class="section--home section">
-        <h2 class="section__title">Novedades</h2>
-        <a href="#" class="section__link" aria-label="View all Maresía novedades">
-          <img src="./assets/images/home/home-news.jpg" alt="Maresía novedades"
-            class="section__image section__image--home" loading="lazy" decoding="async" />
+
+      <!-- News -->
+      <section class="section section--home">
+        <h2 id="sect-news" class="section__title">Novedades</h2>
+        <a href="#" class="section__link" aria-labelledby="sect-news">
+          <img src="./assets/images/home/home-news.jpg"
+               alt="Vista de la sección Novedades de Maresía"
+               class="section__image section__image--home"
+               loading="lazy" decoding="async" />
         </a>
       </section>
     </nav>
 
     <!-- Carousel Press -->
     <div class="carousel-press__wrapper">
-      <h2 class="section__title"><span>Sobre</span> MARESÍA</h2>
-      <div class="carousel-press" id="carouselPress">
+      <h2 id="press-title" class="section__title"><span>Sobre</span> MARESÍA</h2>
+      <div class="carousel-press" id="carouselPress" role="region" aria-roledescription="carousel" aria-labelledby="press-title" aria-live="polite">
+        <div class="carousel__track" role="list">
 
-        <div class="carousel__track">
-
-          <section class="carousel__item">
+          <section class="carousel__item" role="listitem">
             <a href="https://www.vogue.es/" class="carousel-press__link"
-              aria-label="Leer artículo en Vogue sobre Maresía">
+               aria-label="Leer artículo en Vogue sobre Maresía">
               <picture class="carousel-press__picture">
                 <img src="./assets/images/home/home-vogue.jpg"
-                  alt="Logo de la revista Vogue con enlace a artículo sobre Maresía" width="1444" height="620"
-                  class="carousel-press__image" loading="lazy" decoding="async" />
+                     alt="Logo de Vogue"
+                     width="1444" height="620"
+                     class="carousel-press__image"
+                     loading="lazy" decoding="async" />
               </picture>
               <span class="carousel-press__caption">Explorar →</span>
             </a>
           </section>
 
-          <section class="carousel__item">
+          <section class="carousel__item" role="listitem">
             <a href="https://www.mujerhoy.com/" class="carousel-press__link"
-              aria-label="Leer artículo en Mujer Hoy sobre Maresía">
+               aria-label="Leer artículo en Mujer Hoy sobre Maresía">
               <picture class="carousel-press__picture">
                 <img src="./assets/images/home/home-mujer-hoy.jpg"
-                  alt="Logo de la revista Mujer Hoy con enlace a artículo sobre Maresía" width="1444" height="620"
-                  class="carousel-press__image" loading="lazy" decoding="async" />
+                     alt="Logo de Mujer Hoy"
+                     width="1444" height="620"
+                     class="carousel-press__image"
+                     loading="lazy" decoding="async" />
               </picture>
               <span class="carousel-press__caption">Explorar →</span>
             </a>
           </section>
 
-          <section class="carousel__item">
+          <section class="carousel__item" role="listitem">
             <a href="https://www.elle.com/es/" class="carousel-press__link"
-              aria-label="Leer artículo en ELLE sobre Maresía">
+               aria-label="Leer artículo en ELLE sobre Maresía">
               <picture class="carousel-press__picture">
                 <img src="./assets/images/home/home-elle.jpg"
-                  alt="Logo de la revista ELLE con enlace a artículo sobre Maresía" width="1444" height="620"
-                  class="carousel-press__image" loading="lazy" decoding="async" />
+                     alt="Logo de ELLE"
+                     width="1444" height="620"
+                     class="carousel-press__image"
+                     loading="lazy" decoding="async" />
               </picture>
               <span class="carousel-press__caption">Explorar →</span>
             </a>
@@ -120,95 +138,84 @@
         </div>
 
         <div class="carousel-press__actions only-mobile">
-          <div class="carousel-paginator" id="carouselPaginator">
-            <span class="carousel-paginator__dot isActive" data-index="0"></span>
-            <span class="carousel-paginator__dot" data-index="1"></span>
-            <span class="carousel-paginator__dot" data-index="2"></span>
+          <div class="carousel-paginator" id="carouselPressPaginator" role="group" aria-label="Navegación de prensa">
+            <span class="carousel-paginator__dot isActive" data-index="0" role="button" tabindex="0" aria-label="Artículo 1" aria-pressed="true"></span>
+            <span class="carousel-paginator__dot" data-index="1" role="button" tabindex="0" aria-label="Artículo 2" aria-pressed="false"></span>
+            <span class="carousel-paginator__dot" data-index="2" role="button" tabindex="0" aria-label="Artículo 3" aria-pressed="false"></span>
           </div>
         </div>
-
       </div>
     </div>
 
     <!-- Testimonials -->
-    <section class="home-testimonials" aria-labelledby="home-home-testimonials-title">
-
+    <section class="home-testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title" class="visually-hidden">Testimonios de clientes</h2>
       <div class="home-testimonials__wrapper">
 
-        <article class="home-testimonial__article">
+        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial1-title">
           <p class="home-testimonial__rating" aria-label="4 de 5 estrellas">
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star" data-icon="star"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star"></i>
           </p>
-          <h4 class="home-testimonial__title">Era escéptico sobre el tema el “aroma” como terapia</h4>
-          <p class="home-testimonial__desc">
-            Es increíble cómo un aroma puede cambiar la atmósfera de un lugar. Hizo que nuestra casa se sintiera más
-            acogedora, y últimamente estoy de muy buen humor gracias a ello.
-          </p>
-          <footer class="home-testimonial__author">Alex</footer>
+          <h4 id="testimonial1-title" class="home-testimonial__title">Era escéptico sobre el aroma como terapia</h4>
+          <p class="home-testimonial__desc">Es increíble cómo un aroma puede cambiar la atmósfera de un lugar. Hizo que nuestra casa se sintiera más acogedora, y últimamente estoy de muy buen humor gracias a ello.</p>
+          <footer class="home-testimonial__author">— Alex</footer>
         </article>
 
-        <article class="home-testimonial__article">
+        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial2-title">
           <p class="home-testimonial__rating" aria-label="4 de 5 estrellas">
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star" data-icon="star"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star"></i>
           </p>
-          <h4 class="home-testimonial__title">Regalo de cumpleaños perfecto</h4>
-          <p class="home-testimonial__desc">
-            ¡No se parece a nada que haya olido antes! Es súper fresco y me recuerda a las mañanas de verano. Incluso mi
-            madre dijo que notó lo tranquila que me sentía después de usarlo. Sin duda, me alegra el día.
-          </p>
-          <footer class="home-testimonial__author">Lucía</footer>
+          <h4 id="testimonial2-title" class="home-testimonial__title">Regalo de cumpleaños perfecto</h4>
+          <p class="home-testimonial__desc">¡No se parece a nada que haya olido antes! Es súper fresco y me recuerda a las mañanas de verano. Incluso mi madre dijo que notó lo tranquila que me sentía después de usarlo. Sin duda, me alegra el día.</p>
+          <footer class="home-testimonial__author">— Lucía</footer>
         </article>
 
-        <article class="home-testimonial__article">
+        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial3-title">
           <p class="home-testimonial__rating" aria-label="4 de 5 estrellas">
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star" data-icon="star"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star"></i>
           </p>
-          <h4 class="home-testimonial__title">Los amigos siguen preguntando por Maresía</h4>
-          <p class="home-testimonial__desc">
-            Normalmente no me gustan los perfumes sofisticados, pero este es diferente. Usarlo para ir a la escuela me
-            hizo sentir más despierta y, de alguna manera, más feliz.
-          </p>
-          <footer class="home-testimonial__author">Sandra</footer>
+          <h4 id="testimonial3-title" class="home-testimonial__title">Los amigos siguen preguntando por Maresía</h4>
+          <p class="home-testimonial__desc">Normalmente no me gustan los perfumes sofisticados, pero este es diferente. Usarlo para ir a la escuela me hizo sentir más despierta y, de alguna manera, más feliz.</p>
+          <footer class="home-testimonial__author">— Sandra</footer>
         </article>
 
-        <article class="home-testimonial__article">
+        <article class="home-testimonial__article" role="region" aria-labelledby="testimonial4-title">
           <p class="home-testimonial__rating" aria-label="5 de 5 estrellas">
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
-            <i class="home-testimonial__icon icon-star-filled" data-icon="star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
+            <i class="icon-star-filled"></i>
           </p>
-          <h4 class="home-testimonial__title">El mar en casa</h4>
-          <p class="home-testimonial__desc">
-            El olor es tan limpio y salino que es como traer un pedacito del mediterráneo a casa. Ha sido genial para
-            relajarme después del trabajo. Incluso creo que me ayuda a dormir mejor.
-          </p>
-          <footer class="home-testimonial__author">Laura</footer>
+          <h4 id="testimonial4-title" class="home-testimonial__title">El mar en casa</h4>
+          <p class="home-testimonial__desc">El olor es tan limpio y salino que es como traer un pedacito del Mediterráneo a casa. Ha sido genial para relajarme después del trabajo. Incluso creo que me ayuda a dormir mejor.</p>
+          <footer class="home-testimonial__author">— Laura</footer>
         </article>
 
       </div>
     </section>
 
-    <!-- Main bottom-->
+    <!-- Main bottom -->
     <div id="main-bottom" class="main-bottom"></div>
 
   </main>
-  <!--Footer -->
-  <footer id="footer" class="footer">
+
+  <!-- Footer -->
+  <footer id="footer" class="footer" role="contentinfo">
   </footer>
+
   <script src="js/include-html.js"></script>
   <script src="js/icons.js"></script>
   <script src="js/carousel.js"></script>
@@ -218,10 +225,9 @@
   <script src="js/menu.js"></script>
   <script src="js/themes.js"></script>
   <script>
-    includeFragment("include-header.html", "#header", injectIcons, updateResponsiveVisibility, menu,themes);
-    includeFragment("include-footer.html", "#footer", injectIcons, updateResponsiveVisibility, themes ,updateDetailsState,);
+    includeFragment("include-header.html", "#header", injectIcons, updateResponsiveVisibility, menu, themes);
+    includeFragment("include-footer.html", "#footer", injectIcons, updateResponsiveVisibility, themes, updateDetailsState);
     includeFragment("include-main-bottom.html", "#main-bottom", injectIcons);
   </script>
-
 </body>
 </html>
