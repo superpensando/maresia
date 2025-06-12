@@ -85,7 +85,7 @@
   gap:var(--spacing-large);
   width: 100%;
   background-color: var(--background-color-tertiary);
-  padding: var(--spacing-large) 0; 
+  padding: var(--spacing-large) 0 var(--spacing-xx-large) 0; 
 }
 
 .carousel-press {
@@ -122,16 +122,6 @@
   text-decoration: none;
   color: var(--text-color-primary);
   width:auto;
-}
-
-.carousel-press__caption {
-  position: absolute;
-  display:block;
-  bottom: var(--spacing-xx-large);
-  left: calc(50% - 50px) ;
-  font-weight: var(--typography-bold-weight);
-  font-size: var(--font-size-x-medium);
-  line-height:var(--line-height-x-medium);
 }
 
 
