@@ -1,4 +1,4 @@
-<div class="footer__content footer__content--top">
+<div class="footer__content footer__content--top" role="region" aria-label="Contenido superior del pie de página">
 
     <div class="footer__logo">
         <img src="./assets/images/logos/logo-maresia-tertiary.svg" alt="Logo de Maresía" class="footer__logo-image" />
@@ -7,14 +7,14 @@
 
     <nav class="footer__nav" aria-label="Navegación del pie de página">
         <details class="footer__nav-wrapper details__wrapper">
-            <summary class="footer__nav-title">
+            <summary class="footer__nav-title" aria-expanded="false" aria-controls="company-list">
                 <span>Compañía</span>
                 <span class="footer__nav-icons only-mobile">
                     <i data-icon="plus" class="footer__nav-icon icon-plus only-mobile"></i>
                     <i data-icon="minus" class="footer__nav-icon icon-minus only-mobile"></i>
                 </span>
             </summary>
-            <ul class="footer__nav-list">
+            <ul id="company-list" class="footer__nav-list"  aria-labelledby="company-summary">
                 <li class="footer__nav-item">
                     <a href="products.html" class="footer__nav-link">Productos</a>
                 </li>
@@ -31,14 +31,14 @@
         </details>
 
         <details class="footer__nav-wrapper details__wrapper">
-            <summary class="footer__nav-title">
+            <summary class="footer__nav-title" aria-expanded="false" aria-controls="legal-list">
                 <span>Legal</span>
                 <span class="footer__nav-icons only-mobile">
                     <i data-icon="plus" class="footer__nav-icon icon-plus only-mobile"></i>
                     <i data-icon="minus" class="footer__nav-icon icon-minus only-mobile"></i>
                 </span>
             </summary>
-            <ul class="footer__nav-list">
+            <ul id="legal-list" class="footer__nav-list" aria-labelledby="legal-summary">
                 <li class="footer__nav-item">
                     <a href="#" class="footer__nav-link">Aviso Legal</a>
                 </li>
@@ -75,11 +75,10 @@
         </div>
     </div>
 </div>
-</div>
 
-<div class=" footer__content--middle">
+<div class=" footer__content--middle" role="region" aria-label="Contenido medio del pie de página">
     <div class="footer__content">
-        <div class="social-netwok" aria-label="Redes sociales">
+        <div class="social-netwok" role="region" aria-label="Redes sociales">
             <a href="#" class="social-netwok__link" aria-label="Instagram de Maresía">
                 <i class="social-netwok__icon icon-instagram" data-icon="instagram"></i>
             </a>
@@ -90,14 +89,14 @@
         <div class="footer-accesibility only-desktop" aria-label="Accesibilidad">
             <div class="accesibility">
                 <div class="accesibility-mode">
-                    <button class="accesibility-mode__button" aria-label="Modo light">
+                    <button class="accesibility-mode__button" aria-label="Modo claro" >
                         <i class="accesibility-mode__icon icon-light" data-icon="light"></i>
                     </button>
-                    <button class="accesibility-mode__button" aria-label="Modo dark">
+                    <button class="accesibility-mode__button" aria-label="Modo oscuro" >
                         <i class="accesibility-mode__icon icon-dark" data-icon="dark"></i>
                     </button>
                 </div>
-                <a href="#" class="accesibility__link" aria-label="Tamaño de fuente">
+                <a href="#" class="accesibility__link" aria-label="Ajustar tamaño de fuente">>
                     Accesibilidad Aa
                 </a>
             </div>
@@ -105,7 +104,7 @@
     </div>
 </div>
 
-<div class="footer__content footer__content--bottom">
+<div class="footer__content footer__content--bottom" role="region" aria-label="Contenido inferior del pie de página">
     <p class="footer-copyright">
       Copyright © Maresía. Todos los derechos reservados.
     </p>
