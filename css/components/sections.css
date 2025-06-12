@@ -74,7 +74,6 @@
     background-color: var(--background-color-tertiary);
 }
 
-
 .section--about-maresia__image {
     width: 100%;
 }
@@ -142,6 +141,11 @@
         padding: var(--spacing-xxxxx-large);
 
     }
+
+    .section--product-detail {
+        flex-direction: column;
+    }
+
 
     .section--about-maresia:has(.section--about-maresia__figure) .section__wrapper {
         max-width: 65%;
