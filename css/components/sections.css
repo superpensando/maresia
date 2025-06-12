@@ -142,6 +142,10 @@
 
     }
 
+    .section--product-detail h5 {
+        display:none;
+    }
+
     .section--product-detail {
         flex-direction: column;
     }
