@@ -16,8 +16,8 @@
   <!-- Carousel Main -->
   <div class="carousel__wrapper" role="region" aria-roledescription="carousel" aria-label="Galería principal">
     <div class="carousel carousel--home" id="carouselHome" aria-live="polite">
-      <div class="carousel__track" role="list">
-        <section class="carousel__item" >
+      <ul class="carousel__track">
+        <li class="carousel__item" >
           <picture>
             <source srcset="./assets/images/home/home-carousel1-1x.webp" type="image/webp" />
             <source srcset="./assets/images/home/home-carousel1-1x.jpg" type="image/jpeg" />
@@ -26,8 +26,8 @@
                  width="1444" height="620"
                  class="carousel__image" loading="lazy" decoding="async" />
           </picture>
-        </section>
-        <section class="carousel__item" >
+        </li>
+        <li class="carousel__item" >
           <picture>
             <source srcset="./assets/images/home/home-carousel2-1x.webp" type="image/webp" />
             <source srcset="./assets/images/home/home-carousel2-1x.jpg" type="image/jpeg" />
@@ -36,7 +36,7 @@
                  width="1444" height="620"
                  class="carousel__image" loading="lazy" decoding="async" />
           </picture>
-        </section>
+        </ul>
       </div>
 
       <div class="carousel__actions">
@@ -57,7 +57,7 @@
   <main class="main">
 
     <!-- Quote -->
-    <blockquote class="quote" aria-label="Slogan Maresía">
+    <blockquote class="quote">
       “Allí donde el mar susurra, nace el aroma que toca el alma”
     </blockquote>
 
@@ -90,9 +90,9 @@
     <div class="carousel-press__wrapper">
       <h2 id="press-title" class="section__title"><span>Sobre</span> MARESÍA</h2>
       <div class="carousel-press" id="carouselPress" role="region" aria-roledescription="carousel" aria-labelledby="press-title" aria-live="polite">
-        <div class="carousel__track" role="list">
+        <ul class="carousel__track">
 
-          <section class="carousel__item">
+          <li class="carousel__item">
             <a href="https://www.vogue.es/" class="carousel-press__link"
                aria-label="Leer artículo en Vogue sobre Maresía">
               <picture class="carousel-press__picture">
@@ -104,9 +104,9 @@
               </picture>
               <span class="carousel-press__caption">Explorar →</span>
             </a>
-          </section>
+          </li>
 
-          <section class="carousel__item">
+          <li class="carousel__item">
             <a href="https://www.mujerhoy.com/" class="carousel-press__link"
                aria-label="Leer artículo en Mujer Hoy sobre Maresía">
               <picture class="carousel-press__picture">
@@ -118,9 +118,9 @@
               </picture>
               <span class="carousel-press__caption">Explorar →</span>
             </a>
-          </section>
+          </li>
 
-          <section class="carousel__item">
+          <ul class="carousel__item">
             <a href="https://www.elle.com/es/" class="carousel-press__link"
                aria-label="Leer artículo en ELLE sobre Maresía">
               <picture class="carousel-press__picture">
@@ -132,7 +132,7 @@
               </picture>
               <span class="carousel-press__caption">Explorar →</span>
             </a>
-          </section>
+          </ul>
 
         </div>
 
@@ -152,7 +152,7 @@
       <div class="home-testimonials__wrapper">
 
         <article class="home-testimonial__article" aria-labelledby="testimonial1-title">
-          <p class="home-testimonial__rating" aria-labelledby="4 de 5 estrellas">
+          <p class="home-testimonial__rating" >
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
@@ -165,7 +165,7 @@
         </article>
 
         <article class="home-testimonial__article"   aria-labelledby="testimonial2-title">
-          <p class="home-testimonial__rating" aria-labelledby="4 de 5 estrellas">
+          <p class="home-testimonial__rating" >
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
@@ -178,7 +178,7 @@
         </article>
 
         <article class="home-testimonial__article"   aria-labelledby="testimonial3-title">
-          <p class="home-testimonial__rating" aria-labelledby="4 de 5 estrellas">
+          <p class="home-testimonial__rating" >
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
@@ -191,7 +191,7 @@
         </article>
 
         <article class="home-testimonial__article" aria-labelledby="testimonial4-title">
-          <p class="home-testimonial__rating" aria-labelledby="5 de 5 estrellas">
+          <p class="home-testimonial__rating" >
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
             <i class="icon-star-filled"></i>
