@@ -4,7 +4,7 @@
 //  CSS Layer:
 //      -Settings: Variables and configuration (CUI framework includes, styleguide, breakpoints...)
 //      -Generic: General css adjusts (Resets, normalize, scaffolding or layout General ...
-//      -Objetcs: Layout, mediaqueries
+//      -Objetcs: Layout 
 //      -Components.
 //      -Utilities: Overrides, Shame and Helpers code  with ability to override anything.
 //       IT's the only place where the !important is allowed!
