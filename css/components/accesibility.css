@@ -18,6 +18,7 @@
     justify-content: flex-end;
     align-items: center;
     line-height: unset;
+    font-weight: var(--typography-semibold-weight);
 }
 
 .accesibility-mode__icon svg path {
@@ -32,10 +33,13 @@
     fill: var(--interaction-color-primary);
 }
 
-.accesibility__link {
-    display: inline-block;
-    cursor: pointer;
+
+.accesibility-mode__button:hover,
+.accesibility-mode__button:focus,
+.accesibility-mode__button:active {
+  color: var(--interaction-color-primary);
 }
+
 
 /* Responsive - Media Query*/
 
@@ -43,7 +47,7 @@
    .accesibility-mode__icon.icon-dark  svg {
         width: 25px;
     }
-    .accesibility__link {
+    .accesibility__font {
         font-size: var( --font-size-x-medium);
         line-height: var(--line-height-x-medium);
         font-weight:  var(--typography-semibold-weight);
