@@ -140,7 +140,7 @@
   gap:var(--spacing-small);
 }
 
-.carousel-thumb__thumbanils-image {
+.carousel-thumb__thumbnails-image {
   width: 50px;
   height: auto;
   cursor: pointer;
@@ -151,9 +151,9 @@
   width:100%;
 }
 
-.carousel-thumb__thumbanils-image:hover,
-.carousel-thumb__thumbanils-image.isActive,
-.carousel-thumb__thumbanils-image:active{
+.carousel-thumb__thumbnails-image:hover,
+.carousel-thumb__thumbnails-image.isActive,
+.carousel-thumb__thumbnails-image:active{
   border: 3px solid var(--interaction-color-primary);
 }
 
@@ -170,7 +170,7 @@
   align-items: flex-start;
 }
 
-.carousel-thumb--product .carousel-thumb__thumbanils-image{
+.carousel-thumb--product .carousel-thumb__thumbnails-image{
   width:50px;
 }
 
@@ -192,7 +192,7 @@
 
   /* Carousel Thumb  */
 
-  .carousel-thumb--about-maresia .carousel-thumb__thumbanils-image {
+  .carousel-thumb--about-maresia .carousel-thumb__thumbnails-image {
     width: 150px;
   }
 
@@ -239,7 +239,7 @@
 @media screen and (min-width: 1200px) {
    /* Carousel Thumb  */
 
-     .carousel-thumb--about-maresia .carousel-thumb__thumbanils-image {
+     .carousel-thumb--about-maresia .carousel-thumb__thumbnails-image {
       width: 220px;
     }
 }
