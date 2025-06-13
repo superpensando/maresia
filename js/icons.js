@@ -14,7 +14,8 @@ function injectIcons(basePath = "../assets/icons", prefix = "i-") {
       })
       .then(svg => {
         el.innerHTML = svg;
-        el.classList.add("icon-loaded aria-hidden='true'");
+        el.classList.add("icon-loaded");
+        el.setAttribute('aria-hidden', 'true');
       })
       .catch(err => {
         console.error(err);
