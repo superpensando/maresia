@@ -40,11 +40,13 @@
     margin-left: 5px;
 }
 
+.filter__icon.icon-arrow-down svg path {
+    fill: var(--text-color-primary);
+}
 
-
-.filter__icon svg path {
+.filter__icon.icon-list svg path {
     fill: var(--basic-color-secondary);
-    stroke: var(--basic-color-secondary);
+    stroke: var(--text-color-primary);
 }
 
 .filter__icon.icon-grid svg path {

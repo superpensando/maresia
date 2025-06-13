@@ -177,6 +177,14 @@
 
 /* Responsive - Media Query*/
 
+@media screen and (min-width: 480px) {
+    .carousel-thumb--product {
+      max-width: 600px;
+      margin:0 auto;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
 
   /* Carousel Main */
